@@ -1,6 +1,5 @@
 ﻿Models
 _-------------
-
 Const readonly price
 
 
