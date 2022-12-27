@@ -18,23 +18,22 @@ VehicleViewController
 
 ViewModel
 ---------
-PartialView
-List
+PartialView - for Edit (not time, regnr)
+(List)
 Kvitto
 
 
 Views
-________
-metoder som skapas i entity framework
-
+---------
 Vehicle
 --------
-//Index - startsida om funktionalitet
+J-Y * 2_1_Index * Index - pagination, column order, make better... List Sök/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
+
 Add
 Remove
-Edit (ej tid)
-List Sök/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
+* Edit (not time, regnr)
 Details (all)
+
 Checkout(recipe or not)
 
 Home
@@ -47,7 +46,7 @@ Allmänt
 ------------
 *Seeder - Rob
 *Validering med attributes - Noah
-*Dropdownlist enums -Johan
+*Dropdownlist enums - Johan
 *Config -  price i appsettings service -J-Y | 4_Appsettings
 
 sökfunktion
@@ -58,6 +57,3 @@ Extra
 --------
 Price ? enum efter typ
 (garage class)
-
-
-kjhlkjhlkjh
