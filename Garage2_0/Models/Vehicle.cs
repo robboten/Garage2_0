@@ -23,8 +23,7 @@ namespace Garage2_0.Models
         [MinLength(0)]
         public string RegistrationNr { get; set; } = string.Empty;
 
-        [MaxLength(10)]
-        [MinLength(0)]
+        [MaxLength(20)]
         public string Model { get; set; }
 
         [Required]
