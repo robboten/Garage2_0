@@ -1,6 +1,6 @@
 ﻿Models
 _-------------
-Const readonly price
+Config -  price i appsettings service
 
 
 Vehicle class
