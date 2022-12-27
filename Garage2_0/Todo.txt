@@ -1,0 +1,62 @@
+﻿Models
+_-------------
+
+Const readonly price
+
+
+Vehicle class
+--------------
+enum color, brand, type
+int wheels
+string RegistrationNr, Model
+datetime TimeOfArrival
+
+
+Controllers
+--------------
+VehicleViewController
+
+
+ViewModel
+---------
+PartialView
+List
+Kvitto
+
+
+Views
+________
+metoder som skapas i entity framework
+
+Vehicle
+--------
+//Index - startsida om funktionalitet
+Add
+Remove
+Edit (ej tid)
+List Sök/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
+Details (all)
+Checkout(recipe or not)
+
+Home
+-------------
+Index - startsida om funktionalitet
+Privacy
+
+
+Allmänt
+------------
+Seeder
+Bootstrap
+Validering med attributes
+Dropdownlist types
+sökfunktion
+
+
+Extra
+--------
+Price ? enum efter typ
+(garage class)
+
+
+
