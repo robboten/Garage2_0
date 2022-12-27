@@ -47,7 +47,7 @@ Allmänt
 ------------
 *Seeder - Rob
 *Validering med attributes - Noah
-*Dropdownlist enums -Johan
+3_Dropdownlist_Enum				Dropdownlist enums -Johan
 *Config -  price i appsettings service -J-Y
 
 sökfunktion
