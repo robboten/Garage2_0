@@ -9,6 +9,7 @@
         Volkswagen,
         Tesla,
         Fiat,
-        Skoda
+        Skoda,
+        Toyota
     }
 }

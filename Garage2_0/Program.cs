@@ -32,6 +32,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+var dataText = System.IO.File.ReadAllText(@"Data/SeedData.json");
+DbInitializer.Seeder(dataText, app);
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
