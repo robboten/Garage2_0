@@ -8,32 +8,18 @@ namespace Garage2_0.Models
 {
     public class DbInitializer
     {
-        public static void Seed(IApplicationBuilder applicationBuilder)
-        {
-            GarageContext garageContext= applicationBuilder.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<GarageContext>();
-
-            garageContext.Database.EnsureCreated();
-
-            if(!garageContext.Vehicle.Any())
-            {
-
-            }
-
-            garageContext.SaveChanges();
-        }
         public static void Seeder(string jsonData, IApplicationBuilder applicationBuilder)
         {
             GarageContext garageContext = applicationBuilder.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<GarageContext>();
 
             garageContext.Database.EnsureCreated();
 
+            //add time
             List<Vehicle>? vehicles = JsonConvert.DeserializeObject<List<Vehicle>>(jsonData, new IsoDateTimeConverter { DateTimeFormat = "yyyy-MM-dd" });
-
-            Console.WriteLine("test");
-            Console.WriteLine(vehicles);
 
             if (!garageContext.Vehicle.Any())
             {
+                //how to check if this works? safety...
                 garageContext.AddRange(vehicles);
             }
 
