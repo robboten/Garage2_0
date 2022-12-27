@@ -45,11 +45,13 @@ Privacy
 
 Allmänt
 ------------
-Seeder
-Bootstrap
-Validering med attributes
-Dropdownlist types
+*Seeder 
+*Validering med attributes
+*Dropdownlist enums
+*Config -  price i appsettings service
+
 sökfunktion
+Bootstrap
 
 
 Extra
