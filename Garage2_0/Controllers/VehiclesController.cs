@@ -20,11 +20,19 @@ namespace Garage2_0.Controllers
         }
 
         // GET: Vehicles
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? pageNumber)
         {
-              return _context.Vehicle != null ? 
-                          View(await _context.Vehicle.ToListAsync()) :
-                          Problem("Entity set 'GarageContext.Vehicle'  is null.");
+            int pageSize = 3;
+
+            var model = _context.Vehicle;
+
+
+            return View(await PaginatedList<Vehicle>.CreateAsync(model, pageNumber ?? 1, pageSize));
+            //Ref: https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/sort-filter-page?view=aspnetcore-7.0
+
+            //return _context.Vehicle != null ? 
+            //              View(await _context.Vehicle.ToListAsync()) :
+            //              Problem("Entity set 'GarageContext.Vehicle'  is null.");
         }
 
         // GET: Vehicles/Details/5

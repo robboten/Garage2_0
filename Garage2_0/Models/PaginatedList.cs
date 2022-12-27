@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
 
 namespace Garage2_0.Models
 {
@@ -16,9 +18,9 @@ namespace Garage2_0.Models
         }
 
         public bool HasPreviousPage => PageIndex > 1;
-
         public bool HasNextPage => PageIndex < TotalPages;
 
+        //Note: A CreateAsync method is used instead of a constructor to create the PaginatedList<T> object because constructors can't run asynchronous code.
         public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> source, int pageIndex, int pageSize)
         {
             var count = await source.CountAsync();

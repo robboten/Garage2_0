@@ -1,7 +1,10 @@
-﻿@model IEnumerable<Vehicle>
+﻿@*@model IEnumerable<Vehicle>*@
+
+
+@model PaginatedList<Vehicle>
 
 <table class="table">
-    <thead>
+   @* <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Color)
@@ -23,7 +26,7 @@
             </th>
             <th></th>
         </tr>
-    </thead>
+    </thead>*@
     <tbody>
         @foreach (var item in Model)
         {
@@ -55,4 +58,20 @@
         }
     </tbody>
 </table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>
 
