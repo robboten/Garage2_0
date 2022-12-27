@@ -45,10 +45,10 @@ Privacy
 
 Allmänt
 ------------
-*Seeder - Rob
-*Validering med attributes - Noah
+1_Seeder - Rob
+2_Validation Validering med attributes - Noah
 3_Dropdownlist_Enum				Dropdownlist enums -Johan
-*Config -  price i appsettings service -J-Y
+4_Config -  price i appsettings service - J-Y
 
 sökfunktion
 Bootstrap

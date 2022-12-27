@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Garage2_0.Data;
+using Garage2_0.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<GarageContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("GarageContext") ?? throw new InvalidOperationException("Connection string 'GarageContext' not found.")));
@@ -24,6 +26,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+var dataText = System.IO.File.ReadAllText(@"Data/SeedData.json");
+DbInitializer.Seeder(dataText, app);
 
 app.MapControllerRoute(
     name: "default",

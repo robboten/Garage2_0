@@ -5,6 +5,7 @@
         Bus,
         Car,
         Bicycle,
-        Motorcycle
+        Motorcycle,
+        Truck
     }
 }
