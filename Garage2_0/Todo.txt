@@ -48,7 +48,7 @@ Allmänt
 *Seeder - Rob
 *Validering med attributes - Noah
 *Dropdownlist enums -Johan
-*Config -  price i appsettings service -J-Y
+*Config -  price i appsettings service -J-Y | 4_Appsettings
 
 sökfunktion
 Bootstrap
