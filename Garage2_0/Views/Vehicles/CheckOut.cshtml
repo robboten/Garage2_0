@@ -1,0 +1,31 @@
+﻿@model Garage2_0.Models.Vehicle
+
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Check Out</h1>
+
+<div>
+    <h4>Vehicle</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RegistrationNr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RegistrationNr)
+        </dd>
+
+    </dl>
+
+    <p><input type="checkbox">Do you want a receipt? <button>Continue with checkout ></button></p>
+
+</div>
+<div>
+
+    <a asp-action="Index">Back to List</a>
+</div>
