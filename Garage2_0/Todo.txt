@@ -26,7 +26,7 @@ Johan - checkout w/o recipe - delete?
 
 Noah - ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
 
-Robert -
+Robert - 
 
 
 
