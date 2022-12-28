@@ -28,6 +28,6 @@ namespace Garage2_0.Models
         public string Model { get; set; }
 
         [Required]
-        DateTime TimeOfArrival { get; set; }
+        public DateTime TimeOfArrival { get; set; }
     }
 }
