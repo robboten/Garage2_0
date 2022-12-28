@@ -6,7 +6,7 @@
 * sort columns in views for better experience
 * start page with info
 * ui experience - buttons, colors and so on
-* change language to checkin/checkout instead of add/remove
+
 
 
 Ideas if time allows...
@@ -24,7 +24,7 @@ Jean-Yves - Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
 Johan - checkout w/o recipe - delete?
 
-Noah - 
+Noah - ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
 
 Robert -
 
