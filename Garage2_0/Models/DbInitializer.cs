@@ -15,7 +15,7 @@ namespace Garage2_0.Models
             garageContext.Database.EnsureCreated();
 
             //add time
-            List<Vehicle>? vehicles = JsonConvert.DeserializeObject<List<Vehicle>>(jsonData, new IsoDateTimeConverter { DateTimeFormat = "yyyy-MM-dd" });
+            List<Vehicle>? vehicles = JsonConvert.DeserializeObject<List<Vehicle>>(jsonData);
 
             if (!garageContext.Vehicle.Any())
             {

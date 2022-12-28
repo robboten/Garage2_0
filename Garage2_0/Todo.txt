@@ -29,7 +29,7 @@ Vehicle
 --------
 J-Y * 2_1_Index * Index - pagination, column order, make better... List Sök/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
-Add
+Add - timestamp
 Remove
 * Edit (not time, regnr)
 Details (all)
