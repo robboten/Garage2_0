@@ -4,51 +4,48 @@
 @model PaginatedList<Vehicle>
 
 <table class="table">
-   @* <thead>
+   <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Color)
+             <th>
+                Registration Nr
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Brand)
+                Type
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VehicleType)
+                Brand
             </th>
+            
             <th>
-                @Html.DisplayNameFor(model => model.Wheels)
+                Model
             </th>
+           
             <th>
-                @Html.DisplayNameFor(model => model.RegistrationNr)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Model)
+               Color
             </th>
             <th></th>
         </tr>
-    </thead>*@
+    </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Color)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Brand)
+                    @Html.DisplayFor(modelItem => item.RegistrationNr)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.VehicleType)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Wheels)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.RegistrationNr)
+                    @Html.DisplayFor(modelItem => item.Brand)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Model)
                 </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>         
+                
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a> |

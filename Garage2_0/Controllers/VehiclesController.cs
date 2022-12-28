@@ -19,16 +19,16 @@ namespace Garage2_0.Controllers
             _context = context;
         }
 
-        // GET: Vehicles
+        // GET: PaginatedList<Vehicle>
         public async Task<IActionResult> Index(int? pageNumber)
         {
-            int pageSize = 3;
+            int pageSize = 5;
 
             var model = _context.Vehicle;
 
 
             return View(await PaginatedList<Vehicle>.CreateAsync(model, pageNumber ?? 1, pageSize));
-            //Ref: https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/sort-filter-page?view=aspnetcore-7.0
+            // For more details about Pagination, see https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/sort-filter-page?view=aspnetcore-7.0
 
             //return _context.Vehicle != null ? 
             //              View(await _context.Vehicle.ToListAsync()) :
