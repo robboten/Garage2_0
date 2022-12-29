@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Garage2_0.Data;
 using Garage2_0.Models;
+using NuGet.Configuration;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.Extensions.Options;
+using System.Text.RegularExpressions;
 
 namespace Garage2_0.Controllers
 {
@@ -14,9 +18,11 @@ namespace Garage2_0.Controllers
     {
         private readonly GarageContext _context;
 
-        public VehiclesController(GarageContext context)
+        private readonly IOptions<MySettings> settings;
+        public VehiclesController(GarageContext context, IOptions<MySettings> settings)
         {
             _context = context;
+            this.settings = settings;
         }
 
         // GET: PaginatedList<Vehicle>
@@ -37,6 +43,23 @@ namespace Garage2_0.Controllers
 
         // GET: Vehicles/Details/5
         public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Vehicle == null)
+            {
+                return NotFound();
+            }
+
+            var vehicle = await _context.Vehicle
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (vehicle == null)
+            {
+                return NotFound();
+            }
+
+            return View(vehicle);
+        }
+
+        public async Task<IActionResult> Test(int? id)
         {
             if (id == null || _context.Vehicle == null)
             {
@@ -158,7 +181,20 @@ namespace Garage2_0.Controllers
             }
             var vehicle = await _context.Vehicle.FindAsync(id);
 
-            var test = vehicle.TimeOfArrival;
+            var receipt = new ReceiptViewModel();
+            //{
+            //    RegNr = vehicle.RegistrationNr,
+            //    TimeOfArrival = vehicle.TimeOfArrival,
+
+
+            //};
+            receipt.RegNr = vehicle.RegistrationNr;
+            receipt.TimeOfArrival = vehicle.TimeOfArrival;
+            var totalTime = DateTime.Now.Subtract(vehicle.TimeOfArrival).TotalHours;
+            var price = totalTime * settings.Value.PricePerHour;
+            receipt.TotalTime = Math.Round(totalTime);
+            receipt.Price = Math.Round(price, 2);
+
 
             if (vehicle != null)
             {
@@ -166,7 +202,8 @@ namespace Garage2_0.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return View(nameof(DeleteConfirmed), receipt);
+            //return RedirectToAction(nameof(Index));
         }
 
         private bool VehicleExists(int id)

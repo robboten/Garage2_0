@@ -1,0 +1,48 @@
+﻿@model Garage2_0.Models.ReceiptViewModel
+
+@{
+    ViewData["Title"] = "Receipt";
+}
+
+<h1>Receipt</h1>
+
+<div>
+    <h4>Vehicle</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(receipt => receipt.RegNr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(receipt => receipt.RegNr)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(receipt => receipt.TimeOfArrival)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(receipt => receipt.TimeOfArrival)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(receipt => receipt.TimeOfDeparture)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(receipt => receipt.TimeOfDeparture)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(receipt => receipt.TotalTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(receipt => receipt.TotalTime)
+            @*@Math.Round(receipt=>receipt.TotalTime, 2)*@
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(receipt => receipt.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(receipt => receipt.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to Garage</a>
+</div>
