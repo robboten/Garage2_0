@@ -1,5 +1,55 @@
-﻿Models
-_-------------
+﻿To do
+---------
+* remove reg nr from edit view
+* sort columns in views for better experience
+
+* start page with info
+
+
+Ideas if time allows...
+---------
+* brands in database
+* api
+* jquery-search
+* pagination page input box instead of text
+
+
+WIP
+-----------
+
+Namngivning av branches: dag_Task ex 3_Checkout
+
+Jean-Yves - Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
+
+Johan - checkout w/o recipe - delete? get price from setting to use with recipe
+
+Noah - ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
+
+Robert - Api, garage table
+
+
+
+Done
+----------
+* Config -  price i appsettings service
+* Vehicle class
+* VehicleViewController
+* Views for List, edit, add, remove
+* dropdowns for enums
+* seeder
+* validation in vehicle model
+
+
+
+
+
+
+
+
+
+
+Models
+-------------
 Config -  price i appsettings service
 
 
@@ -27,11 +77,11 @@ Views
 ---------
 Vehicle
 --------
-J-Y * 2_1_Index * Index - pagination, column order, make better... List Sök/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
+Index - pagination, column order, make better... List Sök/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
 Add - timestamp
 Remove
-* Edit (not time, regnr)
+Edit (not time, regnr)
 Details (all)
 
 Checkout(recipe or not)
