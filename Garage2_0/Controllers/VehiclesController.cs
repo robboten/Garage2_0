@@ -59,23 +59,6 @@ namespace Garage2_0.Controllers
             return View(vehicle);
         }
 
-        public async Task<IActionResult> Test(int? id)
-        {
-            if (id == null || _context.Vehicle == null)
-            {
-                return NotFound();
-            }
-
-            var vehicle = await _context.Vehicle
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (vehicle == null)
-            {
-                return NotFound();
-            }
-
-            return View(vehicle);
-        }
-
         // GET: Vehicles/Create
         public IActionResult Create()
         {
