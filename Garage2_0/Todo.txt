@@ -1,12 +1,9 @@
 ﻿To do
 ---------
-* get price from setting to use with recipe
 * remove reg nr from edit view
-* checkout w/o recipe
 * sort columns in views for better experience
-* start page with info
-* ui experience - buttons, colors and so on
 
+* start page with info
 
 
 Ideas if time allows...
@@ -20,13 +17,15 @@ Ideas if time allows...
 WIP
 -----------
 
+Namngivning av branches: dag_Task ex 3_Checkout
+
 Jean-Yves - Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
-Johan - checkout w/o recipe - delete?
+Johan - checkout w/o recipe - delete? get price from setting to use with recipe
 
 Noah - ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
 
-Robert - 
+Robert - Api, garage table
 
 
 
