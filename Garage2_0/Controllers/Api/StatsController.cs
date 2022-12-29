@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.Text.Json;
-using System.Text.RegularExpressions;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Garage2_0.Controllers.Api
 {
@@ -27,11 +25,13 @@ namespace Garage2_0.Controllers.Api
             var stats = new GarageStatistics();
             var allVehicles = vehicleRepository.AllVehicles;
 
-            stats.TotalWheels=allVehicles.Sum(p => p.Wheels);
             stats.TotalVehicles = allVehicles.Count();
+            stats.TotalSlots = settings.Value.ParkingSlots;
+            stats.AvailableSlots = settings.Value.ParkingSlots - stats.TotalVehicles;
+
+            stats.TotalWheels = allVehicles.Sum(p => p.Wheels);
 
             var totaltime = allVehicles.Sum(v => DateTime.Now.Subtract(v.TimeOfArrival).TotalHours);
-
             stats.TotalIncome = Math.Round(totaltime * settings.Value.PricePerHour);
 
             //add number of each vehicle

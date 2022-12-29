@@ -6,5 +6,6 @@
         public int IntSetting { get; set; }
 
         public int PricePerHour { get; set; }
+        public int ParkingSlots { get; set; }
     }
 }

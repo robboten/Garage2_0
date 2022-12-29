@@ -10,13 +10,11 @@ namespace Garage2_0.Models
         {
             this.garageContext = garageContext; 
         }
-
         public IEnumerable<Vehicle> AllVehicles { get { return garageContext.Vehicle; } }
 
         public Vehicle? GetVehicleByRegNr(string regNr) => garageContext.Vehicle.FirstOrDefault(p => p.RegistrationNr == regNr);
 
         public DateTime GetCheckoutPrice(string regNr) => garageContext.Vehicle.FirstOrDefault(p => p.RegistrationNr == regNr).TimeOfArrival;
-
     }
  
 }
