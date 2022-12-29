@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<GarageContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("GarageContext") ?? throw new InvalidOperationException("Connection string 'GarageContext' not found.")));
 
+//is this needed and for what?
+builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

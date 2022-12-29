@@ -5,6 +5,8 @@
 
 * start page with info
 
+*on add/remove - update free spaces? Or calculate each time?
+
 
 Ideas if time allows...
 ---------

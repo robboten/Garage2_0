@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\GarageSettings.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Todo.txt" />
   </ItemGroup>
 

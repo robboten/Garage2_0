@@ -4,5 +4,7 @@
     {
         public string? StringSetting { get; set; }
         public int IntSetting { get; set; }
+
+        public int PricePerHour { get; set; }
     }
 }
