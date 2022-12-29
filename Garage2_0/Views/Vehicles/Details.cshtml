@@ -11,16 +11,10 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Color)
+            @Html.DisplayNameFor(model => model.RegistrationNr)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Brand)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Brand)
+            @Html.DisplayFor(model => model.RegistrationNr)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.VehicleType)
@@ -29,16 +23,10 @@
             @Html.DisplayFor(model => model.VehicleType)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Wheels)
+            @Html.DisplayNameFor(model => model.Brand)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Wheels)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.RegistrationNr)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.RegistrationNr)
+            @Html.DisplayFor(model => model.Brand)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Model)
@@ -46,6 +34,19 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Model)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Wheels)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Wheels)
+        </dd>
+        
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TimeOfArrival)
         </dt>
@@ -56,5 +57,5 @@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to Garage</a>
 </div>

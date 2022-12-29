@@ -47,7 +47,7 @@
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Check out</a>
                 </td>
             </tr>
         }
@@ -59,15 +59,18 @@
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";
 }
 
-<a asp-action="Index"
-   asp-route-pageNumber="@(Model.PageIndex - 1)"
-   class="btn btn-default @prevDisabled">
-    Previous
-</a>
-<a asp-action="Index"
-   asp-route-pageNumber="@(Model.PageIndex + 1)"
-   class="btn btn-default @nextDisabled">
-    Next
-</a>
-<label>@(Model.PageIndex + "/" + Model.TotalPages)</label>
+<div class="d-flex align-items-center">
+    <a asp-action="Index"
+       asp-route-pageNumber="@(Model.PageIndex - 1)"
+       class="btn btn-default border border-gray @prevDisabled">
+        @("<") Previous
+    </a>
+    <a asp-action="Index"
+       asp-route-pageNumber="@(Model.PageIndex + 1)"
+       class="btn btn-default border border-gray px-4 mx-3 @nextDisabled">
+        Next @(">")
+    </a>
+    <label class="">( Page @(Model.PageIndex + "/" + Model.TotalPages) )</label>
+</div>
+
 
