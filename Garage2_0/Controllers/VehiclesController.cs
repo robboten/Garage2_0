@@ -151,11 +151,15 @@ namespace Garage2_0.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+
             if (_context.Vehicle == null)
             {
                 return Problem("Entity set 'GarageContext.Vehicle'  is null.");
             }
             var vehicle = await _context.Vehicle.FindAsync(id);
+
+            var test = vehicle.TimeOfArrival;
+
             if (vehicle != null)
             {
                 _context.Vehicle.Remove(vehicle);
