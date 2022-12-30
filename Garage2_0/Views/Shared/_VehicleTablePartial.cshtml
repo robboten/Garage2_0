@@ -10,6 +10,9 @@
                 @Html.DisplayNameFor(model => model.FirstOrDefault().RegistrationNr)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().VehicleType)
             </th>
             <th>
@@ -30,6 +33,9 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.RegistrationNr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeOfArrival)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.VehicleType)

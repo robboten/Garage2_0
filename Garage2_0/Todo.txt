@@ -1,7 +1,20 @@
-﻿To do
+﻿Bonusuppgift:
+Om tid finns så utöka sökningen till de andra fälten. Implementera även sorterings knappar ovanför kolumnerna i
+översiktsvyn så att användaren kan välja en kolumn att sortera fallande eller stigande. Ni väljer själva om ni sorterar i
+backend eller frontend.
+
+
+Efter ett fordon parkerat, editerats eller liknande vill vi som användare få feedback på att det
+gått bra eller dåligt. Så att vi exempelvis slipper titta efter själva i listan att fordonet verkligen
+har uppdaterats.
+
+
+
+To do
 ---------
 * on add/remove - update free spaces? Or calculate each time?
 * check thru ui, report here if anything needs fixing.
+* remove Home view items or not?
 
 Ideas if time allows...
 ---------

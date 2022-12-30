@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Garage2_0.Data;
+﻿using Garage2_0.Data;
 using Garage2_0.Models;
-using NuGet.Configuration;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using System.Text.RegularExpressions;
 
 namespace Garage2_0.Controllers
 {
@@ -183,7 +175,7 @@ namespace Garage2_0.Controllers
             {
                 _context.Vehicle.Remove(vehicle);
             }
-            
+
             await _context.SaveChangesAsync();
             return View(nameof(DeleteConfirmed), receipt);
             //return RedirectToAction(nameof(Index));
@@ -191,7 +183,7 @@ namespace Garage2_0.Controllers
 
         private bool VehicleExists(int id)
         {
-          return (_context.Vehicle?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Vehicle?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
