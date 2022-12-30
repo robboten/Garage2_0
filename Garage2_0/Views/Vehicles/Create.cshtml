@@ -6,7 +6,6 @@
 
 <h1>Check in</h1>
 
-<h4>Vehicle</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -15,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group my-1">
                 <label asp-for="RegistrationNr" class="control-label"></label>
-                <input asp-for="RegistrationNr" class="form-control" />
+                <input asp-for="RegistrationNr" style='text-transform:uppercase' class="form-control" />
                 <span asp-validation-for="RegistrationNr" class="text-danger"></span>
             </div>
             <partial name="_VehicleEditTablePartial" />

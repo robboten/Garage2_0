@@ -1,6 +1,7 @@
 ﻿using Garage2_0.Data;
 using Garage2_0.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -15,15 +16,35 @@ namespace Garage2_0.Controllers
         {
             _context = context;
             this.settings = settings;
+
         }
 
         // GET: PaginatedList<Vehicle>
-        public async Task<IActionResult> Index(int? pageNumber)
+        public async Task<IActionResult> Index(int? pageNumber, string sortOrder)
         {
-            int pageSize = 5;
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["RegSortParm"] = String.IsNullOrEmpty(sortOrder) ? "regnr_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
 
-            var model = _context.Vehicle;
+            int pageSize = settings.Value.IntSetting;
 
+            var model = _context.Vehicle.OrderBy(s => s.RegistrationNr);
+
+            switch (sortOrder)
+            {
+                case "regnr_desc":
+                    model = model.OrderByDescending(v => v.RegistrationNr);
+                    break;
+                case "Date":
+                    model = model.OrderBy(s => s.TimeOfArrival);
+                    break;
+                case "date_desc":
+                    model = model.OrderByDescending(s => s.TimeOfArrival);
+                    break;
+                //default:
+                //    model = model.OrderBy(s => s.RegistrationNr);
+                //    break;
+            }
 
             return View(await PaginatedList<Vehicle>.CreateAsync(model, pageNumber ?? 1, pageSize));
             // For more details about Pagination, see https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/sort-filter-page?view=aspnetcore-7.0
@@ -67,6 +88,7 @@ namespace Garage2_0.Controllers
             if (ModelState.IsValid)
             {
                 vehicle.TimeOfArrival = DateTime.Now;
+                vehicle.RegistrationNr = vehicle.RegistrationNr.ToUpper();
                 _context.Add(vehicle);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

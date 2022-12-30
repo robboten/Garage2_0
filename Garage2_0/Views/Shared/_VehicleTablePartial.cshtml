@@ -3,14 +3,23 @@
 
 @model PaginatedList<Vehicle>
 
+@{
+    var sortString = Convert.ToString(ViewData["CurrentSort"]);
+    var regArrow = sortString == "regnr_desc" ? "up" : "down";
+    var dateArrow = sortString == "date_desc" ? "down" : "up";
+}
+
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().RegistrationNr)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["RegSortParm"]"><i class="bi bi-caret-@regArrow-fill" style="vertical-align:middle"></i></a>
+                @*@Html.DisplayNameFor(model => model.FirstOrDefault().RegistrationNr)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)
+                @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)<a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]"><i class="bi bi-caret-@dateArrow-fill" style="vertical-align:middle"></i></a>
+@*                @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)*@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().VehicleType)
@@ -31,7 +40,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>
+                <td class="text-uppercase">
                     @Html.DisplayFor(modelItem => item.RegistrationNr)
                 </td>
                 <td>
@@ -67,11 +76,13 @@
 
 <div class="d-flex align-items-center">
     <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
        asp-route-pageNumber="@(Model.PageIndex - 1)"
        class="btn btn-default border border-gray @prevDisabled">
         @("<") Previous
     </a>
     <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
        asp-route-pageNumber="@(Model.PageIndex + 1)"
        class="btn btn-default border border-gray px-4 mx-3 @nextDisabled">
         Next @(">")
