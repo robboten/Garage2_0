@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Garage2_0/Migrations/20221230164051_PaginationSettings.cs
+/Garage2_0/Migrations/20221230164051_PaginationSettings.Designer.cs
