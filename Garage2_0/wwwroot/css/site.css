@@ -20,3 +20,15 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+@media print {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    a{
+        display:none;
+    }
+}
