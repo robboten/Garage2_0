@@ -22,6 +22,7 @@ Ideas if time allows...
 * more api
 * jquery-search
 * pagination page input box instead of text
+* change pagination nr of rows
 
 
 WIP

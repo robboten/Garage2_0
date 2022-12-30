@@ -64,10 +64,9 @@ namespace Garage2_0.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Color,Brand,VehicleType,Wheels,RegistrationNr,Model")] Vehicle vehicle)
         {
-            vehicle.TimeOfArrival = DateTime.Now;
-
             if (ModelState.IsValid)
             {
+                vehicle.TimeOfArrival = DateTime.Now;
                 _context.Add(vehicle);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,7 +95,7 @@ namespace Garage2_0.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Color,Brand,VehicleType,Wheels,RegistrationNr,Model")] Vehicle vehicle)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Color,Brand,VehicleType,Wheels,RegistrationNr,Model,TimeOfArrival")] Vehicle vehicle)
         {
             if (id != vehicle.Id)
             {
