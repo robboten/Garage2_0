@@ -1,17 +1,12 @@
 ﻿To do
 ---------
-* remove reg nr from edit view
-* sort columns in views for better experience
-
-* start page with info
-
-*on add/remove - update free spaces? Or calculate each time?
-
+* on add/remove - update free spaces? Or calculate each time?
+* check thru ui, report here if anything needs fixing.
 
 Ideas if time allows...
 ---------
 * brands in database
-* api
+* more api
 * jquery-search
 * pagination page input box instead of text
 
@@ -23,12 +18,17 @@ Namngivning av branches: dag_Task ex 3_Checkout
 
 Jean-Yves - Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
-Johan - checkout w/o recipe - delete? get price from setting to use with recipe
+Johan - e-learning
 
-Noah - ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
+Noah - checkout w/o recipe
 
-Robert - Api, garage table
+Robert - landing page, remove reg nr from edit view, sort columns in views for better experience, tasks from part 2
 
+
+To review
+------------
+* Api - error, checkout?
+* Delete link on receipt
 
 
 Done
@@ -40,6 +40,9 @@ Done
 * dropdowns for enums
 * seeder
 * validation in vehicle model
+* ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
+* get price from setting to use with recipe
+* garage table
 
 
 
