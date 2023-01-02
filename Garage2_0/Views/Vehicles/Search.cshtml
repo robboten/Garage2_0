@@ -4,7 +4,7 @@
     <button id="searchButton" class="btn btn-secondary">Search</button>
 </div>
 
-<table class="table table-striped" id="tblVehicle">
+<table class="table" id="tblVehicle">
 
     <thead>
         <tr>
@@ -12,10 +12,13 @@
                 Registration Number
             </th>
             <th scope="col">
-                Model
+                Vehicle Type
             </th>
             <th scope="col">
-                Parked date
+               Time Of Arrival
+            </th>
+            <th scope="col">
+                Time Parked (hours)
             </th>
             <th>
             </th>
@@ -31,6 +34,26 @@
 
         $(document).ready(function () {
 
+            //quick solution to get brands from enum like struct
+            const Brands = [
+               "Volvo",
+               "Saab",
+               "Scania",
+               "BMW",
+               "Volkswagen",
+               "Tesla",
+               "Fiat",
+               "Skoda",
+               "Toyota"
+            ];
+            const VehicleType=[
+                        "Bus",
+        "Car",
+        "Bicycle",
+        "Motorcycle",
+        "Truck"
+            ];
+
             function checkObject(arr) {
                 // check if arr is array
                 const result = Array.isArray(arr);
@@ -40,7 +63,7 @@
                 else {
                     console.log(`${arr} is not an array.`);
                 }
-            }
+            };
 
 
             $("button").click(function () {
@@ -49,6 +72,9 @@
                 let callid = 'Search';
 
                 let urlFinal = callid + '/' + searchQuery;
+
+                console.log(Brands[0]);
+                
                 //$("table tbody").html("");
                 //$("tbody").parents("tr").remove();
                 $.ajax({
@@ -62,11 +88,11 @@
                     success: function (result) {
 
                         ///var length = Object.keys(result).length;//8 for a single Object
-                        console.log(length);
+                        console.log(result);
                         // call the function to see if Object is array
-                        checkObject(result);
+                       // checkObject(result);
 
-                        console.log(typeof result); //Object!!!!!
+                        //console.log(typeof result); //Object!!!!!
 
                         //Therefore, convert it to a real array
                         var result = $.makeArray(result);
@@ -78,8 +104,7 @@
                             $("tbody").append($("<tr>"));
                             let appendElement = $("tbody tr").last();
                             appendElement.append($("<td>").html(result.registrationNr));
-                            appendElement.append($("<td>").html(result.model));
-                            //appendElement.append($("<td>").html(result.timeOfArrival));
+                            appendElement.append($("<td>").html(VehicleType[result.vehicleType]));
 
                             let dateFromAPI = result.timeOfArrival;
                             //let dateFromAPI = "2016-01-02T12:30:00Z"; Ref: https://www.toptal.com/software/definitive-guide-to-datetime-manipulation
@@ -90,11 +115,15 @@
                                 month: 'short',
                                 year: 'numeric',
                             });
-                            //appendElement.append($("<td>").html(localDateString));
+
                             appendElement.append($("<td>").html(localDateString));
+                            appendElement.append($("<td>").html(result.hoursParked));
+
                             var newTd =($("<td>"));
                             newTd.append($("<a>", { href: "/Vehicles/Edit/" + result.id, html: "Edit" }));
                             appendElement.append(newTd);
+
+
                             //appendElement.append($("<td><a href="/Vehicles/Edit/".html(result.id)));
 
                         });
