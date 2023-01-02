@@ -11,8 +11,9 @@ har uppdaterats.
 
 To do
 ---------
-* on add/remove - update free spaces? Or calculate each time?
 * check thru ui, report here if anything needs fixing.
+* bugtest
+* codereviews
 
 Ideas if time allows...
 ---------
@@ -28,11 +29,11 @@ WIP
 
 Namngivning av branches: dag_Task ex 3_Checkout
 
-Jean-Yves - Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
+Jean-Yves - Bootstrap typeadhead, Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
 Johan - e-learning
 
-Noah - checkout w/o recipe
+Noah - Alerts
 
 Robert - landing page, remove reg nr from edit view, sort columns in views for better experience, tasks from part 2
 
@@ -41,7 +42,7 @@ To review
 ------------
 * Api - error, checkout?
 * Delete link on receipt
-
+* checkout w/o recipe
 
 Done
 ----------
