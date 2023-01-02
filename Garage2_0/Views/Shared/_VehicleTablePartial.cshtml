@@ -37,20 +37,14 @@
                 @*@Html.DisplayNameFor(model => model.FirstOrDefault().RegistrationNr)*@
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().VehicleType)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)<a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]"><i class="bi bi-caret-@dateArrow-fill" style="vertical-align:middle"></i></a>
 @*                @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().VehicleType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Model)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Color)
+                @Html.DisplayNameFor(model => model.FirstOrDefault().HoursParked)
             </th>
             <th></th>
         </tr>
@@ -63,21 +57,14 @@
                     @Html.DisplayFor(modelItem => item.RegistrationNr)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TimeOfArrival)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.VehicleType)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Brand)
+                    @Html.DisplayFor(modelItem => item.TimeOfArrival)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Model)
+                    @Html.DisplayFor(modelItem => item.HoursParked)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Color)
-                </td>
-
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a class="details" href="javascript:;">Details</a> |

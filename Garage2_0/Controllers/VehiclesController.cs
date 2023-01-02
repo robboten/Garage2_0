@@ -181,8 +181,6 @@ namespace Garage2_0.Controllers
             //{
             //    RegNr = vehicle.RegistrationNr,
             //    TimeOfArrival = vehicle.TimeOfArrival,
-
-
             //};
             receipt.RegNr = vehicle.RegistrationNr;
             receipt.TimeOfArrival = vehicle.TimeOfArrival;
