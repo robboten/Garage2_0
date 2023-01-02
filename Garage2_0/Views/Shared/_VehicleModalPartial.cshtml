@@ -1,0 +1,9 @@
+﻿@model Vehicle
+
+<dl class="row">
+    @foreach (var v in Model.GetType().GetProperties())
+    {
+        <dt class="col-sm-6">@Html.DisplayName(v.Name)</dt>
+        <dd class="col-sm-6">@Html.Display(v.Name)</dd>
+    }
+</dl>

@@ -1,19 +1,27 @@
-﻿To do
+﻿Bonusuppgift:
+Om tid finns så utöka sökningen till de andra fälten. Implementera även sorterings knappar ovanför kolumnerna i
+översiktsvyn så att användaren kan välja en kolumn att sortera fallande eller stigande. Ni väljer själva om ni sorterar i
+backend eller frontend.
+
+
+Efter ett fordon parkerat, editerats eller liknande vill vi som användare få feedback på att det
+gått bra eller dåligt. Så att vi exempelvis slipper titta efter själva i listan att fordonet verkligen
+har uppdaterats.
+
+
+To do
 ---------
-* remove reg nr from edit view
-* sort columns in views for better experience
-
-* start page with info
-
-*on add/remove - update free spaces? Or calculate each time?
-
+* check thru ui, report here if anything needs fixing.
+* bugtest
+* codereviews
 
 Ideas if time allows...
 ---------
 * brands in database
-* api
+* more api
 * jquery-search
 * pagination page input box instead of text
+* change pagination nr of rows in input
 
 
 WIP
@@ -21,15 +29,20 @@ WIP
 
 Namngivning av branches: dag_Task ex 3_Checkout
 
-Jean-Yves - Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
+Jean-Yves - Bootstrap typeadhead, Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
-Johan - checkout w/o recipe - delete? get price from setting to use with recipe
+Johan - e-learning
 
-Noah - ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
+Noah - Alerts
 
-Robert - Api, garage table
+Robert - landing page, remove reg nr from edit view, sort columns in views for better experience, tasks from part 2
 
 
+To review
+------------
+* Api - error, checkout?
+* Delete link on receipt
+* checkout w/o recipe
 
 Done
 ----------
@@ -40,6 +53,9 @@ Done
 * dropdowns for enums
 * seeder
 * validation in vehicle model
+* ui experience - buttons, colors and so on, change language to checkin/checkout instead of add/remove
+* get price from setting to use with recipe
+* garage table
 
 
 

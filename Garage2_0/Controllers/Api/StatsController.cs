@@ -27,7 +27,6 @@ namespace Garage2_0.Controllers.Api
 
             stats.TotalVehicles = allVehicles.Count();
             stats.TotalSlots = settings.Value.ParkingSlots;
-            stats.AvailableSlots = settings.Value.ParkingSlots - stats.TotalVehicles;
 
             stats.TotalWheels = allVehicles.Sum(p => p.Wheels);
 
