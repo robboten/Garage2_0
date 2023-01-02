@@ -1,6 +1,85 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
+﻿@model IEnumerable<Vehicle>
+@{
+    ViewData["Title"] = "Vehicle Info";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/Garage2_0.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<div class="table-responsive">
+    <table cellpadding="0" cellspacing="0" class="table" id="VehicleGrid">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.RegistrationNr)</th>
+                <th>@Html.DisplayNameFor(model => model.TimeOfArrival)</th>
+                <th>@Html.DisplayNameFor(model => model.HoursParked)</th>
+                <th>@Html.DisplayNameFor(model => model.Brand)</th>
+                <th>@Html.DisplayNameFor(model => model.Color)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (Vehicle v in Model)
+            {
+                <tr>
+                    <td>@v.RegistrationNr</td>
+                    <td>@v.TimeOfArrival</td>
+                    <td>@v.HoursParked</td>
+                    <td>@v.Brand</td>
+                    <td>@v.Color</td>
+                    <td><a class="details" href="javascript:;">View</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="partialModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Vehicle Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#VehicleGrid .details").click(function () {
+            var regNr = $(this).closest("tr").find("td").eq(0).html();
+            var veh = { registrationNr: regNr };
+            console.log(veh);
+            $.ajax({
+                type: "POST",
+                url: "/Home/Details",
+                data: veh,
+                dataType: "html",
+                success: function (response) {
+                    $("#partialModal").find(".modal-body").html(response);
+                    $("#partialModal").modal('show');
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        });
+    });
+</script>
+
+

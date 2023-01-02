@@ -7,5 +7,6 @@
 
         public int PricePerHour { get; set; }
         public int ParkingSlots { get; set; }
+        public int PageSize { get; set; }
     }
 }
