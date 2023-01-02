@@ -14,12 +14,12 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group my-1">
                 <label asp-for="RegistrationNr" class="control-label"></label>
-                <input asp-for="RegistrationNr" style='text-transform:uppercase' class="form-control" />
-                <span asp-validation-for="RegistrationNr" class="text-danger"></span>
+                <input asp-for="RegistrationNr" style='text-transform:uppercase' id="RegID" class="form-control" />
+                <span asp-validation-for="RegistrationNr" class="text-danger" id="RegIDValidation"></span>
             </div>
             <partial name="_VehicleEditTablePartial" />
             <div class="form-group my-1">
-                <input type="submit" value="Check in" class="btn btn-primary" />
+                <input type="submit" id="CreateBtn" value="Check in" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -33,4 +33,68 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+
+    <script>
+        'use strict';
+
+        $(document).ready(function () {
+
+
+            console.log("Test");
+            $("#RegID").focusout(function () {
+
+                $("#CreateBtn").prop('disabled', false);
+                let searchQuery = $.trim($("#RegID").val());
+
+                let callid = 'Search';
+
+                let urlFinal = callid + '/' + searchQuery;
+                //$("table tbody").html("");
+                //$("tbody").parents("tr").remove();
+                $.ajax({
+                    type: "GET",
+                    // url: "/api/Search",
+                    url: '/API/' + urlFinal,
+                    //data: "\"" + searchQuery + "\"",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+
+
+
+                    success: function (result) {
+                        var result = $.makeArray(result);
+                        console.log();
+                        if (result.length > 0 && searchQuery != "") {
+                            $("#RegIDValidation").html("Registration number already exists, try again.")
+                            $("#CreateBtn").prop('disabled', true);
+                        }
+                        //$.each(result, function (i, r) {
+                        //    var regNr = r["registrationNr"];
+
+                        //    console.log(regNr);
+                        //    console.log(searchQuery);
+
+                        //    if (searchQuery.toUpperCase() == regNr.toUpperCase()) {
+                        //        console.log(regNr);
+                        //    }
+                        //});
+                        //var test = result.indexof(t => t.registrationNr==='kkkkk');
+                        //console.log(test);
+
+
+                        // call the function to see if Object is array
+
+                        //console.log(typeof result); //Object!!!!!
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr)
+                        throw new Error('Network response was not OK');
+                    }
+                });
+            }).trigger("focusout");
+        });
+
+    </script>
+
 }
