@@ -1,24 +1,26 @@
 ﻿<div class="my-5">
-Enter your search query:
-<input id="txtVehicleRegn" type="text" />
+    Enter registration number to search for:
+    <input id="txtVehicleRegn" type="text" />
     <button id="searchButton" class="btn btn-secondary">Search</button>
 </div>
 
-<table class="table table-striped"  id="tblVehicle">
+<table class="table table-striped" id="tblVehicle">
 
-        <thead>
-            <tr>
-                <th scope="col">
-                    Registration Number
-                </th>
-                <th scope="col">
-                    Model
-                </th>
-                 <th scope="col">
-                    Parked date
-                 </th>
-            </tr>
-        </thead>
+    <thead>
+        <tr>
+            <th scope="col">
+                Registration Number
+            </th>
+            <th scope="col">
+                Model
+            </th>
+            <th scope="col">
+                Parked date
+            </th>
+            <th>
+            </th>
+        </tr>
+    </thead>
     <tbody></tbody>
 </table>
 
@@ -27,7 +29,7 @@ Enter your search query:
     <script>
         'use strict';
 
-    $(document).ready(function(){
+        $(document).ready(function () {
 
             function checkObject(arr) {
                 // check if arr is array
@@ -41,43 +43,43 @@ Enter your search query:
             }
 
 
-      $("button").click(function(){
-        let searchQuery = $.trim($("#txtVehicleRegn").val());
+            $("button").click(function () {
+                let searchQuery = $.trim($("#txtVehicleRegn").val());
 
-            let callid = 'Search';
-            
-            let urlFinal = callid + '/' + searchQuery;
-            //$("table tbody").html("");
-            //$("tbody").parents("tr").remove();
-            $.ajax({
-                type: "GET",
-               // url: "/api/Search",
-                url: '/API/' + urlFinal,
-                //data: "\"" + searchQuery + "\"",
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
+                let callid = 'Search';
 
-                success: function (result) {
+                let urlFinal = callid + '/' + searchQuery;
+                //$("table tbody").html("");
+                //$("tbody").parents("tr").remove();
+                $.ajax({
+                    type: "GET",
+                    // url: "/api/Search",
+                    url: '/API/' + urlFinal,
+                    //data: "\"" + searchQuery + "\"",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
 
-                        ///var length = Object.keys(result).length;//8 for a single Object 
+                    success: function (result) {
+
+                        ///var length = Object.keys(result).length;//8 for a single Object
                         console.log(length);
                         // call the function to see if Object is array
                         checkObject(result);
 
                         console.log(typeof result); //Object!!!!!
-                        
-               //Therefore, convert it to a real array
-                    var result = $.makeArray(result);
+
+                        //Therefore, convert it to a real array
+                        var result = $.makeArray(result);
                         let table = $("#tblVehicle tbody");
                         table.find("tr").remove();
                         //console.log(result);
                         $.each(result, function (i, result) {
-                          
-                        $("tbody").append($("<tr>"));
-                        let appendElement = $("tbody tr").last();
-                        appendElement.append($("<td>").html(result.registrationNr));
-                        appendElement.append($("<td>").html(result.model));
-                        //appendElement.append($("<td>").html(result.timeOfArrival));
+
+                            $("tbody").append($("<tr>"));
+                            let appendElement = $("tbody tr").last();
+                            appendElement.append($("<td>").html(result.registrationNr));
+                            appendElement.append($("<td>").html(result.model));
+                            //appendElement.append($("<td>").html(result.timeOfArrival));
 
                             let dateFromAPI = result.timeOfArrival;
                             //let dateFromAPI = "2016-01-02T12:30:00Z"; Ref: https://www.toptal.com/software/definitive-guide-to-datetime-manipulation
@@ -89,22 +91,24 @@ Enter your search query:
                                 year: 'numeric',
                             });
                             //appendElement.append($("<td>").html(localDateString));
-                            var position =  appendElement.append($("<td>").html(localDateString));
-                            position.append($("<a>",{href:"/Vehicles/Edit/"+result.id, html:"Edit"}));
+                            appendElement.append($("<td>").html(localDateString));
+                            var newTd =($("<td>"));
+                            newTd.append($("<a>", { href: "/Vehicles/Edit/" + result.id, html: "Edit" }));
+                            appendElement.append(newTd);
                             //appendElement.append($("<td><a href="/Vehicles/Edit/".html(result.id)));
-                       
-                    }); 
-                    
-                },
-                error: function (xhr, status, error) {
+
+                        });
+
+                    },
+                    error: function (xhr, status, error) {
                         console.log(xhr)
                         throw new Error('Network response was not OK');
-                }
+                    }
+                });
             });
-          });
         });
 
-</script>
+    </script>
 }
 @*
                         {
