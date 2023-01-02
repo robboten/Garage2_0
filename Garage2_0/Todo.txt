@@ -11,6 +11,8 @@ har uppdaterats.
 
 To do
 ---------
+* unique RegNumber
+* first page shows RegNumber, Type, TimeOfArrival, TimeParked, details page shows everything
 * check thru ui, report here if anything needs fixing.
 * bugtest
 * codereviews
@@ -22,6 +24,13 @@ Ideas if time allows...
 * jquery-search
 * pagination page input box instead of text
 * change pagination nr of rows in input
+
+* Show how many vehicles of each type
+* Specific parking slots, show which one a vehicle is on
+* Show which parking slots are available and being used
+* Vehicles of different sizes use different amount of slots and they have to be next to each other
+* Motorcycles use a third of a parking slot
+* A vehicle type won't be an alternative if that type doesn't fit in the current available slots (ex. no available 3 slots next to each other)
 
 
 WIP
