@@ -88,7 +88,10 @@ Enter your search query:
                                 month: 'short',
                                 year: 'numeric',
                             });
-                            appendElement.append($("<td>").html(localDateString));
+                            //appendElement.append($("<td>").html(localDateString));
+                            var position =  appendElement.append($("<td>").html(localDateString));
+                            position.append($("<a>",{href:"/Vehicles/Edit/"+result.id, html:"Edit"}));
+                            //appendElement.append($("<td><a href="/Vehicles/Edit/".html(result.id)));
                        
                     }); 
                     
