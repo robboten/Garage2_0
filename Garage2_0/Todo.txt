@@ -31,7 +31,7 @@ Namngivning av branches: dag_Task ex 3_Checkout
 
 Jean-Yves - Bootstrap typeadhead, Search/Filter (Typ, RegNr, Ankomsttid, (Parkeradtid)
 
-Johan - e-learning
+Johan - testare
 
 Noah - Alerts
 
