@@ -35,6 +35,12 @@ namespace Garage2_0.Controllers
             //              Problem("Entity set 'GarageContext.Vehicle'  is null.");
         }
 
+        //API + JQuery Search view
+        public IActionResult Search()
+        {
+            return View();
+        }
+
         // GET: Vehicles/Details/5
         public async Task<IActionResult> Details(int? id)
         {
