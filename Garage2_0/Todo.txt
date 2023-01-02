@@ -9,12 +9,10 @@ gått bra eller dåligt. Så att vi exempelvis slipper titta efter själva i lis
 har uppdaterats.
 
 
-
 To do
 ---------
 * on add/remove - update free spaces? Or calculate each time?
 * check thru ui, report here if anything needs fixing.
-* remove Home view items or not?
 
 Ideas if time allows...
 ---------
@@ -22,7 +20,7 @@ Ideas if time allows...
 * more api
 * jquery-search
 * pagination page input box instead of text
-* change pagination nr of rows
+* change pagination nr of rows in input
 
 
 WIP

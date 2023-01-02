@@ -3,6 +3,7 @@ using Garage2_0.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using NuGet.Configuration;
 using System.Diagnostics;
 using System.IO.Pipelines;
 
@@ -11,14 +12,6 @@ namespace Garage2_0.Controllers
     public class HomeController : Controller
     {
         private readonly IOptions<MySettings> _settings;
-        
-        //Constructor 
-        //public HomeController(IOptions<MySettings> settings)
-        //{
-        //    _settings = settings.Value;
-        //    // _settings.StringSetting == "My Value";
-        //}
-
         private readonly ILogger<HomeController> _logger;
         private readonly GarageContext _context;
         public HomeController(GarageContext context, ILogger<HomeController> logger, IOptions<MySettings> settings)
@@ -52,6 +45,22 @@ namespace Garage2_0.Controllers
             var model = _context.Vehicle.ToList();
 
             return View(model);
+        }
+
+        public IActionResult StatsWidget()
+        {
+            var statsModel = new GarageStatistics();
+            var allVehicles = _context.Vehicle.ToList();
+
+            statsModel.TotalVehicles = allVehicles.Count;
+            statsModel.TotalSlots = _settings.Value.ParkingSlots;
+
+            statsModel.TotalWheels = allVehicles.Sum(p => p.Wheels);
+
+            var totaltime = allVehicles.Sum(v => DateTime.Now.Subtract(v.TimeOfArrival).TotalHours);
+            statsModel.TotalIncome = Math.Round(totaltime * _settings.Value.PricePerHour);
+
+            return PartialView("_StatsWidget",statsModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
