@@ -8,10 +8,11 @@
     $(document).ready(
         function () {
             $.get("/Api/Stats", function (data) {
+
                 var parsed = JSON.parse(data);
                 for (var key in parsed) {
                     var newliitem = $('<li/>', { class: "list-group-item text-light bg-dark flex-fill d-flex justify-content-between align-items-center" })
-                    var newcontent = $('<div/>', { html: key })
+                    var newcontent = $('<div/>', { html: (key.replace(/([A-Z])/g, ' $1').trim()) })
                     newliitem.append(newcontent)
 
                     newliitem.append($('<span/>', {

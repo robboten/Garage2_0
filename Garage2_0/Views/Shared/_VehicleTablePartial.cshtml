@@ -5,11 +5,30 @@
 
 @{
     var sortString = Convert.ToString(ViewData["CurrentSort"]);
-    var regArrow = sortString == "regnr_desc" ? "up" : "down";
-    var dateArrow = sortString == "date_desc" ? "down" : "up";
+
+    string regArrow="down";
+    string dateArrow="right";
+
+    if (sortString == "Date")
+    {
+        dateArrow = "up";
+        regArrow = "right";
+    }
+
+    else if (sortString == "date_desc")
+    {
+        dateArrow = "down";
+        regArrow = "right";
+    }
+    else if (sortString == "regnr_desc")
+    {
+        dateArrow = "right";
+        regArrow = "up";
+    }
+    
 }
 
-<table class="table">
+<table class="table" id="VehicleGrid">
     <thead>
         <tr>
             <th>
@@ -18,20 +37,14 @@
                 @*@Html.DisplayNameFor(model => model.FirstOrDefault().RegistrationNr)*@
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().VehicleType)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)<a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]"><i class="bi bi-caret-@dateArrow-fill" style="vertical-align:middle"></i></a>
 @*                @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().VehicleType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Model)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Color)
+                @Html.DisplayNameFor(model => model.FirstOrDefault().HoursParked)
             </th>
             <th></th>
         </tr>
@@ -44,24 +57,18 @@
                     @Html.DisplayFor(modelItem => item.RegistrationNr)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TimeOfArrival)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.VehicleType)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Brand)
+                    @Html.DisplayFor(modelItem => item.TimeOfArrival)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Model)
+                    @Html.DisplayFor(modelItem => item.HoursParked)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Color)
-                </td>
-
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a class="details" href="javascript:;">Details</a> |
+                    @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
                     <a asp-action="Delete" asp-route-id="@item.Id">Check out</a>
                 </td>
             </tr>
@@ -89,5 +96,50 @@
     </a>
     <label class="">( Page @(Model.PageIndex + "/" + Model.TotalPages) )</label>
 </div>
+
+<div id="partialModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Vehicle Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#VehicleGrid .details").click(function () {
+            var regNr = $(this).closest("tr").find("td").eq(0).html().trim();
+            var veh = { registrationNr: regNr };
+            console.log(veh);
+            $.ajax({
+                type: "POST",
+                url: "/Home/Details",
+                data: veh,
+                dataType: "html",
+                success: function (response) {
+                    $("#partialModal").find(".modal-body").html(response);
+                    $("#partialModal").modal('show');
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        });
+    });
+</script>
 
 

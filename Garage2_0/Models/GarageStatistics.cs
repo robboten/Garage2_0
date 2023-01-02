@@ -22,18 +22,8 @@ namespace Garage2_0.Models
         [Display(Name = "Sum of all wheels")]
         public int TotalWheels { get; set; }
 
-
-
-
-
-
-
-
         public GarageStatistics() { }
 
-
         //add number of each vehicle
-
-
     }
 }

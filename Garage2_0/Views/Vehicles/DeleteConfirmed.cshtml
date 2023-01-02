@@ -4,6 +4,10 @@
     ViewData["Title"] = "Receipt";
 }
 
+<div class="alert alert-success">
+    <strong>Success!</strong> The vehicle was successfully checked out!
+</div>
+    
 <h1>Receipt</h1>
 
 <div>
@@ -32,7 +36,6 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(receipt => receipt.TotalTime)
-            @*@Math.Round(receipt=>receipt.TotalTime, 2)*@
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(receipt => receipt.Price)

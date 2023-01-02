@@ -31,4 +31,7 @@ body {
     a{
         display:none;
     }
+    .alert {
+        display: none;
+    }
 }

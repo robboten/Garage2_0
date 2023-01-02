@@ -11,7 +11,8 @@
 </head>
 <body>
     <header>
-        <partial name="_HeaderStatsPartial" />
+        @*<partial name="_HeaderStatsPartial" />*@
+        <vc:widget-stats1 view-name="Header"></vc:widget-stats1>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Vehicles" asp-action="Index">
@@ -34,9 +35,6 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Vehicles" asp-action="Create">Check In</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Modaltest</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Vehicles" asp-action="Search"><i class="bi bi-search"></i>&nbsp;Search</a>
                         </li>
                     </ul>
@@ -52,7 +50,6 @@
     </div>
 
     <partial name="_FooterPartial" />
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
