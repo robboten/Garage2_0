@@ -22,6 +22,40 @@ namespace Garage20.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Garage2_0.Models.BrandDb", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BrandDb");
+                });
+
+            modelBuilder.Entity("Garage2_0.Models.TypeDb", b =>
+                {
+                    b.Property<int>("TypeDbId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TypeDbId"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TypeDbId");
+
+                    b.ToTable("TypeDb");
+                });
+
             modelBuilder.Entity("Garage2_0.Models.Vehicle", b =>
                 {
                     b.Property<int>("Id")
@@ -33,11 +67,13 @@ namespace Garage20.Migrations
                     b.Property<int>("Brand")
                         .HasColumnType("int");
 
+                    b.Property<int>("BrandDbId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Color")
                         .HasColumnType("int");
 
                     b.Property<string>("Model")
-                        .IsRequired()
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
@@ -49,6 +85,9 @@ namespace Garage20.Migrations
                     b.Property<DateTime>("TimeOfArrival")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("TypeDbId")
+                        .HasColumnType("int");
+
                     b.Property<int>("VehicleType")
                         .HasColumnType("int");
 
@@ -57,7 +96,40 @@ namespace Garage20.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BrandDbId");
+
+                    b.HasIndex("TypeDbId");
+
                     b.ToTable("Vehicle");
+                });
+
+            modelBuilder.Entity("Garage2_0.Models.Vehicle", b =>
+                {
+                    b.HasOne("Garage2_0.Models.BrandDb", "BrandDb")
+                        .WithMany("Vehicles")
+                        .HasForeignKey("BrandDbId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Garage2_0.Models.TypeDb", "TypeDb")
+                        .WithMany("Vehicles")
+                        .HasForeignKey("TypeDbId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BrandDb");
+
+                    b.Navigation("TypeDb");
+                });
+
+            modelBuilder.Entity("Garage2_0.Models.BrandDb", b =>
+                {
+                    b.Navigation("Vehicles");
+                });
+
+            modelBuilder.Entity("Garage2_0.Models.TypeDb", b =>
+                {
+                    b.Navigation("Vehicles");
                 });
 #pragma warning restore 612, 618
         }

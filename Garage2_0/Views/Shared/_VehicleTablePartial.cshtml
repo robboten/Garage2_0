@@ -46,6 +46,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().HoursParked)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().BrandDb.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().TypeDb.Name)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -64,6 +70,12 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.HoursParked)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BrandDb.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeDb.Name)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
@@ -102,14 +114,11 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Vehicle Info</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
             </div>
             <div class="modal-body">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="closeBtn" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -137,6 +146,9 @@
                 error: function (response) {
                     alert(response.responseText);
                 }
+            });
+            $("#closeBtn").click(function () {
+                $('#partialModal').modal('hide');
             });
         });
     });

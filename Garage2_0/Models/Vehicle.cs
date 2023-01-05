@@ -30,13 +30,20 @@ namespace Garage2_0.Models
 
         public Color Color { get; set; }
 
-        public Brand Brand { get; set; } //
+        public Brand Brand { get; set; } 
+
+        //public int BrandDbId { get; set; }
+
+        public BrandDb? BrandDb { get; set; } 
 
         [Range(0,16, ErrorMessage = "{0} length must be between {1} and {2}.")]
         public int Wheels { get; set; }
 
+        //public int TypeDbId { get; set; }
+        public TypeDb? TypeDb { get; set; } 
+
 
         [StringLength(10, MinimumLength = 0, ErrorMessage = "{0} length must be between {2} and {1} characters.")]
-        public string Model { get; set; }
+        public string? Model { get; set; }
     }
 }

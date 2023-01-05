@@ -1,902 +1,1602 @@
 [
-	{
-		"Color": "Red",
-		"RegistrationNr": "OFD899",
-		"Wheels": 14,
-		"Brand": "Fiat",
-		"VehicleType": "Motorcycle",
-		"Model": "EN-84",
-		"TimeOfArrival": "2022-05-28T07:50:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "TWB565",
-		"Wheels": 8,
-		"Brand": "Volvo",
-		"VehicleType": "Car",
-		"Model": "MN-44",
-		"TimeOfArrival": "2022-02-24T08:15:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "LIT476",
-		"Wheels": 5,
-		"Brand": "Scania",
-		"VehicleType": "Bicycle",
-		"Model": "YP-82",
-		"TimeOfArrival": "2022-06-23T03:29:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "YAQ332",
-		"Wheels": 15,
-		"Brand": "Scania",
-		"VehicleType": "Truck",
-		"Model": "DW-71",
-		"TimeOfArrival": "2022-02-28T06:13:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "VCG377",
-		"Wheels": 15,
-		"Brand": "Fiat",
-		"VehicleType": "Car",
-		"Model": "JE-18",
-		"TimeOfArrival": "2021-12-12T09:08:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "QRZ136",
-		"Wheels": 12,
-		"Brand": "Volkswagen",
-		"VehicleType": "Motorcycle",
-		"Model": "QX-73",
-		"TimeOfArrival": "2022-12-24T03:58:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "RKP322",
-		"Wheels": 16,
-		"Brand": "BMW",
-		"VehicleType": "Car",
-		"Model": "TN-56",
-		"TimeOfArrival": "2022-08-18T01:47:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "SRO745",
-		"Wheels": 3,
-		"Brand": "Volkswagen",
-		"VehicleType": "Bicycle",
-		"Model": "NV-92",
-		"TimeOfArrival": "2022-04-18T07:11:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "GEH466",
-		"Wheels": 11,
-		"Brand": "Saab",
-		"VehicleType": "Car",
-		"Model": "IS-51",
-		"TimeOfArrival": "2022-09-08T09:27:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "TIN664",
-		"Wheels": 0,
-		"Brand": "Tesla",
-		"VehicleType": "Motorcycle",
-		"Model": "WM-38",
-		"TimeOfArrival": "2022-12-02T07:15:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "CMH757",
-		"Wheels": 12,
-		"Brand": "Scania",
-		"VehicleType": "Car",
-		"Model": "MK-85",
-		"TimeOfArrival": "2022-10-26T12:16:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "XJI289",
-		"Wheels": 6,
-		"Brand": "Saab",
-		"VehicleType": "Motorcycle",
-		"Model": "DC-83",
-		"TimeOfArrival": "2022-10-16T07:13:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "KIS419",
-		"Wheels": 1,
-		"Brand": "Volkswagen",
-		"VehicleType": "Truck",
-		"Model": "OR-56",
-		"TimeOfArrival": "2022-02-12T12:49:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "KKN340",
-		"Wheels": 1,
-		"Brand": "Saab",
-		"VehicleType": "Truck",
-		"Model": "CD-35",
-		"TimeOfArrival": "2022-09-01T05:10:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "PSN476",
-		"Wheels": 2,
-		"Brand": "BMW",
-		"VehicleType": "Motorcycle",
-		"Model": "OX-51",
-		"TimeOfArrival": "2022-03-19T09:21:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "XGV449",
-		"Wheels": 1,
-		"Brand": "Volvo",
-		"VehicleType": "Truck",
-		"Model": "ND-70",
-		"TimeOfArrival": "2021-12-10T11:18:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "FSW508",
-		"Wheels": 12,
-		"Brand": "Skoda",
-		"VehicleType": "Motorcycle",
-		"Model": "FB-29",
-		"TimeOfArrival": "2022-10-31T11:53:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "LHG633",
-		"Wheels": 7,
-		"Brand": "Skoda",
-		"VehicleType": "Bicycle",
-		"Model": "RP-43",
-		"TimeOfArrival": "2022-11-16T07:33:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "CVL125",
-		"Wheels": 3,
-		"Brand": "Volvo",
-		"VehicleType": "Truck",
-		"Model": "CU-37",
-		"TimeOfArrival": "2022-07-14T02:19:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "NWS332",
-		"Wheels": 9,
-		"Brand": "BMW",
-		"VehicleType": "Truck",
-		"Model": "TM-12",
-		"TimeOfArrival": "2022-10-06T02:48:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "NTP121",
-		"Wheels": 5,
-		"Brand": "Tesla",
-		"VehicleType": "Bus",
-		"Model": "EL-84",
-		"TimeOfArrival": "2022-11-05T09:53:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "CTO335",
-		"Wheels": 12,
-		"Brand": "Tesla",
-		"VehicleType": "Bicycle",
-		"Model": "HC-47",
-		"TimeOfArrival": "2022-07-09T07:44:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "SHJ514",
-		"Wheels": 9,
-		"Brand": "Toyota",
-		"VehicleType": "Bus",
-		"Model": "BG-67",
-		"TimeOfArrival": "2021-12-14T09:26:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "JAQ745",
-		"Wheels": 13,
-		"Brand": "Toyota",
-		"VehicleType": "Motorcycle",
-		"Model": "ZY-12",
-		"TimeOfArrival": "2022-07-07T01:30:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "XLI065",
-		"Wheels": 1,
-		"Brand": "Saab",
-		"VehicleType": "Truck",
-		"Model": "RV-13",
-		"TimeOfArrival": "2021-12-14T09:31:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "MDE427",
-		"Wheels": 10,
-		"Brand": "Fiat",
-		"VehicleType": "Motorcycle",
-		"Model": "SG-68",
-		"TimeOfArrival": "2022-11-05T06:22:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "CIU786",
-		"Wheels": 5,
-		"Brand": "Skoda",
-		"VehicleType": "Bicycle",
-		"Model": "QR-57",
-		"TimeOfArrival": "2021-12-24T09:59:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "YVX274",
-		"Wheels": 4,
-		"Brand": "Skoda",
-		"VehicleType": "Bicycle",
-		"Model": "FR-11",
-		"TimeOfArrival": "2022-09-29T08:18:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "YQS425",
-		"Wheels": 14,
-		"Brand": "Saab",
-		"VehicleType": "Motorcycle",
-		"Model": "QR-37",
-		"TimeOfArrival": "2022-09-16T03:04:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "KIK047",
-		"Wheels": 9,
-		"Brand": "BMW",
-		"VehicleType": "Bicycle",
-		"Model": "HE-47",
-		"TimeOfArrival": "2022-03-25T05:19:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "VYS541",
-		"Wheels": 5,
-		"Brand": "Volkswagen",
-		"VehicleType": "Bicycle",
-		"Model": "OY-86",
-		"TimeOfArrival": "2021-12-12T10:20:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "WRC380",
-		"Wheels": 10,
-		"Brand": "Saab",
-		"VehicleType": "Bus",
-		"Model": "XG-38",
-		"TimeOfArrival": "2022-04-27T10:06:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "XXB136",
-		"Wheels": 8,
-		"Brand": "Volvo",
-		"VehicleType": "Truck",
-		"Model": "DU-80",
-		"TimeOfArrival": "2022-10-02T06:06:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "VNC458",
-		"Wheels": 7,
-		"Brand": "Saab",
-		"VehicleType": "Bicycle",
-		"Model": "BD-53",
-		"TimeOfArrival": "2022-12-11T11:32:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "GLO310",
-		"Wheels": 13,
-		"Brand": "Saab",
-		"VehicleType": "Truck",
-		"Model": "KR-80",
-		"TimeOfArrival": "2022-09-20T01:15:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "AYL112",
-		"Wheels": 5,
-		"Brand": "Volvo",
-		"VehicleType": "Truck",
-		"Model": "XV-33",
-		"TimeOfArrival": "2022-07-23T05:05:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "IBX261",
-		"Wheels": 3,
-		"Brand": "Skoda",
-		"VehicleType": "Truck",
-		"Model": "PZ-74",
-		"TimeOfArrival": "2022-12-29T01:57:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "NPW632",
-		"Wheels": 4,
-		"Brand": "Skoda",
-		"VehicleType": "Bus",
-		"Model": "TO-02",
-		"TimeOfArrival": "2022-09-20T07:43:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "GNF282",
-		"Wheels": 5,
-		"Brand": "Scania",
-		"VehicleType": "Bicycle",
-		"Model": "MM-34",
-		"TimeOfArrival": "2022-01-20T12:42:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "HCH873",
-		"Wheels": 11,
-		"Brand": "Toyota",
-		"VehicleType": "Car",
-		"Model": "IY-58",
-		"TimeOfArrival": "2021-12-24T01:43:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "MAD142",
-		"Wheels": 15,
-		"Brand": "Saab",
-		"VehicleType": "Bus",
-		"Model": "OE-55",
-		"TimeOfArrival": "2022-07-15T02:20:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "BIC738",
-		"Wheels": 5,
-		"Brand": "Fiat",
-		"VehicleType": "Car",
-		"Model": "TT-83",
-		"TimeOfArrival": "2022-06-04T03:56:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "YIB098",
-		"Wheels": 9,
-		"Brand": "Saab",
-		"VehicleType": "Truck",
-		"Model": "PO-35",
-		"TimeOfArrival": "2022-01-05T02:22:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "LXI762",
-		"Wheels": 6,
-		"Brand": "Fiat",
-		"VehicleType": "Car",
-		"Model": "WO-24",
-		"TimeOfArrival": "2022-12-10T07:32:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "DDN035",
-		"Wheels": 9,
-		"Brand": "BMW",
-		"VehicleType": "Car",
-		"Model": "LE-57",
-		"TimeOfArrival": "2022-04-25T06:29:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "VXW996",
-		"Wheels": 6,
-		"Brand": "Toyota",
-		"VehicleType": "Bicycle",
-		"Model": "YQ-43",
-		"TimeOfArrival": "2022-05-18T04:35:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "NHA552",
-		"Wheels": 3,
-		"Brand": "BMW",
-		"VehicleType": "Bus",
-		"Model": "CG-10",
-		"TimeOfArrival": "2022-05-15T04:06:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "QEC562",
-		"Wheels": 6,
-		"Brand": "Scania",
-		"VehicleType": "Bicycle",
-		"Model": "IP-73",
-		"TimeOfArrival": "2022-06-06T03:37:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "JBD228",
-		"Wheels": 9,
-		"Brand": "BMW",
-		"VehicleType": "Motorcycle",
-		"Model": "OE-11",
-		"TimeOfArrival": "2022-03-12T09:53:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "SMQ451",
-		"Wheels": 5,
-		"Brand": "Skoda",
-		"VehicleType": "Motorcycle",
-		"Model": "NP-02",
-		"TimeOfArrival": "2022-10-21T10:43:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "KEV844",
-		"Wheels": 7,
-		"Brand": "Volvo",
-		"VehicleType": "Bus",
-		"Model": "TJ-91",
-		"TimeOfArrival": "2022-12-28T03:01:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "JRV762",
-		"Wheels": 10,
-		"Brand": "Saab",
-		"VehicleType": "Motorcycle",
-		"Model": "IX-22",
-		"TimeOfArrival": "2022-06-22T10:47:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "MPD428",
-		"Wheels": 13,
-		"Brand": "Volkswagen",
-		"VehicleType": "Car",
-		"Model": "HE-04",
-		"TimeOfArrival": "2022-10-28T07:13:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "AKD835",
-		"Wheels": 4,
-		"Brand": "Toyota",
-		"VehicleType": "Motorcycle",
-		"Model": "UL-20",
-		"TimeOfArrival": "2022-09-03T02:42:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "SEH645",
-		"Wheels": 6,
-		"Brand": "Saab",
-		"VehicleType": "Truck",
-		"Model": "QH-80",
-		"TimeOfArrival": "2022-04-27T10:41:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "KIK214",
-		"Wheels": 7,
-		"Brand": "Volkswagen",
-		"VehicleType": "Bus",
-		"Model": "WP-24",
-		"TimeOfArrival": "2022-07-18T03:47:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "IIA871",
-		"Wheels": 8,
-		"Brand": "Volkswagen",
-		"VehicleType": "Motorcycle",
-		"Model": "XE-75",
-		"TimeOfArrival": "2022-05-05T05:19:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "BDE303",
-		"Wheels": 8,
-		"Brand": "BMW",
-		"VehicleType": "Bicycle",
-		"Model": "BO-72",
-		"TimeOfArrival": "2022-03-11T04:36:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "TGV514",
-		"Wheels": 12,
-		"Brand": "Skoda",
-		"VehicleType": "Bus",
-		"Model": "HY-84",
-		"TimeOfArrival": "2022-06-30T12:56:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "RFN175",
-		"Wheels": 11,
-		"Brand": "Fiat",
-		"VehicleType": "Motorcycle",
-		"Model": "ET-61",
-		"TimeOfArrival": "2021-12-13T12:04:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "MYA291",
-		"Wheels": 7,
-		"Brand": "Volvo",
-		"VehicleType": "Motorcycle",
-		"Model": "XM-51",
-		"TimeOfArrival": "2022-04-21T01:09:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "DOD299",
-		"Wheels": 1,
-		"Brand": "Saab",
-		"VehicleType": "Motorcycle",
-		"Model": "RF-16",
-		"TimeOfArrival": "2022-07-26T05:45:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "VXC545",
-		"Wheels": 14,
-		"Brand": "Tesla",
-		"VehicleType": "Motorcycle",
-		"Model": "HT-13",
-		"TimeOfArrival": "2022-04-25T07:45:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "QLN833",
-		"Wheels": 9,
-		"Brand": "Fiat",
-		"VehicleType": "Bus",
-		"Model": "RX-54",
-		"TimeOfArrival": "2022-12-11T04:22:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "FYA887",
-		"Wheels": 13,
-		"Brand": "Skoda",
-		"VehicleType": "Motorcycle",
-		"Model": "BS-27",
-		"TimeOfArrival": "2022-12-27T09:33:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "GBN847",
-		"Wheels": 14,
-		"Brand": "Tesla",
-		"VehicleType": "Motorcycle",
-		"Model": "HS-46",
-		"TimeOfArrival": "2022-06-20T12:56:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "PJE287",
-		"Wheels": 12,
-		"Brand": "Fiat",
-		"VehicleType": "Car",
-		"Model": "TI-48",
-		"TimeOfArrival": "2022-12-22T10:36:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "CMN438",
-		"Wheels": 8,
-		"Brand": "Toyota",
-		"VehicleType": "Car",
-		"Model": "JJ-64",
-		"TimeOfArrival": "2022-07-31T06:46:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "DEL281",
-		"Wheels": 0,
-		"Brand": "BMW",
-		"VehicleType": "Truck",
-		"Model": "NY-48",
-		"TimeOfArrival": "2022-11-23T08:41:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "IVY642",
-		"Wheels": 7,
-		"Brand": "Volkswagen",
-		"VehicleType": "Car",
-		"Model": "TV-80",
-		"TimeOfArrival": "2022-12-27T12:31:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "SIS588",
-		"Wheels": 9,
-		"Brand": "Toyota",
-		"VehicleType": "Car",
-		"Model": "OR-18",
-		"TimeOfArrival": "2022-03-13T12:30:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "QPX947",
-		"Wheels": 10,
-		"Brand": "Skoda",
-		"VehicleType": "Truck",
-		"Model": "RR-46",
-		"TimeOfArrival": "2022-05-16T12:58:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "ZTY591",
-		"Wheels": 3,
-		"Brand": "Tesla",
-		"VehicleType": "Car",
-		"Model": "ML-74",
-		"TimeOfArrival": "2022-08-11T10:33:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "TZJ685",
-		"Wheels": 7,
-		"Brand": "Scania",
-		"VehicleType": "Bicycle",
-		"Model": "SW-59",
-		"TimeOfArrival": "2022-03-07T03:33:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "RJG240",
-		"Wheels": 4,
-		"Brand": "Fiat",
-		"VehicleType": "Truck",
-		"Model": "UC-75",
-		"TimeOfArrival": "2022-07-16T12:23:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "GSX030",
-		"Wheels": 15,
-		"Brand": "Fiat",
-		"VehicleType": "Truck",
-		"Model": "HH-46",
-		"TimeOfArrival": "2022-05-13T06:25:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "FLQ021",
-		"Wheels": 7,
-		"Brand": "Volvo",
-		"VehicleType": "Car",
-		"Model": "KR-43",
-		"TimeOfArrival": "2022-08-21T11:37:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "YTB610",
-		"Wheels": 11,
-		"Brand": "Skoda",
-		"VehicleType": "Truck",
-		"Model": "EH-04",
-		"TimeOfArrival": "2022-04-27T12:04:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "HHQ753",
-		"Wheels": 4,
-		"Brand": "Volvo",
-		"VehicleType": "Motorcycle",
-		"Model": "TQ-20",
-		"TimeOfArrival": "2022-04-14T04:26:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "HCF219",
-		"Wheels": 10,
-		"Brand": "Saab",
-		"VehicleType": "Bus",
-		"Model": "WV-60",
-		"TimeOfArrival": "2022-12-19T01:14:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "HOU251",
-		"Wheels": 14,
-		"Brand": "Skoda",
-		"VehicleType": "Car",
-		"Model": "PB-65",
-		"TimeOfArrival": "2022-12-22T01:27:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "DMP353",
-		"Wheels": 14,
-		"Brand": "Scania",
-		"VehicleType": "Bus",
-		"Model": "NJ-94",
-		"TimeOfArrival": "2022-05-05T08:13:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "XUE385",
-		"Wheels": 9,
-		"Brand": "Saab",
-		"VehicleType": "Bus",
-		"Model": "WY-68",
-		"TimeOfArrival": "2022-02-13T03:51:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "YNY577",
-		"Wheels": 10,
-		"Brand": "Saab",
-		"VehicleType": "Car",
-		"Model": "UC-84",
-		"TimeOfArrival": "2022-10-22T07:52:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "KVF645",
-		"Wheels": 3,
-		"Brand": "Tesla",
-		"VehicleType": "Bus",
-		"Model": "VD-23",
-		"TimeOfArrival": "2022-03-19T10:40:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "TVY687",
-		"Wheels": 14,
-		"Brand": "Toyota",
-		"VehicleType": "Motorcycle",
-		"Model": "UT-11",
-		"TimeOfArrival": "2022-10-05T05:37:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "THK661",
-		"Wheels": 6,
-		"Brand": "BMW",
-		"VehicleType": "Car",
-		"Model": "DS-32",
-		"TimeOfArrival": "2022-10-31T07:13:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "HLF114",
-		"Wheels": 9,
-		"Brand": "Tesla",
-		"VehicleType": "Car",
-		"Model": "UF-26",
-		"TimeOfArrival": "2022-09-04T05:11:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "LBD495",
-		"Wheels": 4,
-		"Brand": "Tesla",
-		"VehicleType": "Car",
-		"Model": "DH-58",
-		"TimeOfArrival": "2022-05-26T10:06:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "EFA856",
-		"Wheels": 9,
-		"Brand": "Tesla",
-		"VehicleType": "Motorcycle",
-		"Model": "IV-16",
-		"TimeOfArrival": "2022-02-17T08:32:00.000"
-	},
-	{
-		"Color": "Yellow",
-		"RegistrationNr": "ILQ845",
-		"Wheels": 3,
-		"Brand": "Fiat",
-		"VehicleType": "Bicycle",
-		"Model": "EB-85",
-		"TimeOfArrival": "2022-02-10T10:02:00.000"
-	},
-	{
-		"Color": "Silver",
-		"RegistrationNr": "EMR037",
-		"Wheels": 11,
-		"Brand": "Scania",
-		"VehicleType": "Car",
-		"Model": "TX-18",
-		"TimeOfArrival": "2022-03-31T05:11:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "CEP298",
-		"Wheels": 7,
-		"Brand": "Saab",
-		"VehicleType": "Car",
-		"Model": "HJ-81",
-		"TimeOfArrival": "2022-09-17T02:31:00.000"
-	},
-	{
-		"Color": "Black",
-		"RegistrationNr": "YAL163",
-		"Wheels": 15,
-		"Brand": "Scania",
-		"VehicleType": "Motorcycle",
-		"Model": "AQ-74",
-		"TimeOfArrival": "2022-10-21T03:08:00.000"
-	},
-	{
-		"Color": "White",
-		"RegistrationNr": "SGS805",
-		"Wheels": 3,
-		"Brand": "Saab",
-		"VehicleType": "Bicycle",
-		"Model": "QK-10",
-		"TimeOfArrival": "2022-07-01T08:12:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "SQC792",
-		"Wheels": 7,
-		"Brand": "Toyota",
-		"VehicleType": "Car",
-		"Model": "MC-81",
-		"TimeOfArrival": "2022-12-10T03:33:00.000"
-	},
-	{
-		"Color": "Blue",
-		"RegistrationNr": "QDH168",
-		"Wheels": 10,
-		"Brand": "BMW",
-		"VehicleType": "Truck",
-		"Model": "VY-52",
-		"TimeOfArrival": "2022-12-26T05:30:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "UMI687",
-		"Wheels": 7,
-		"Brand": "Toyota",
-		"VehicleType": "Bicycle",
-		"Model": "KS-72",
-		"TimeOfArrival": "2022-09-03T09:06:00.000"
-	},
-	{
-		"Color": "Red",
-		"RegistrationNr": "GFE602",
-		"Wheels": 1,
-		"Brand": "Saab",
-		"VehicleType": "Bicycle",
-		"Model": "WK-63",
-		"TimeOfArrival": "2022-03-27T06:24:00.000"
-	},
-	{
-		"Color": "Green",
-		"RegistrationNr": "TDW824",
-		"Wheels": 5,
-		"Brand": "Toyota",
-		"VehicleType": "Truck",
-		"Model": "UC-72",
-		"TimeOfArrival": "2022-02-24T04:55:00.000"
-	}
+  {
+    "Color": "White",
+    "RegistrationNr": "NUV650",
+    "Wheels": 16,
+    "Brand": "Volkswagen",
+    "VehicleType": "Car",
+    "Model": "DB-66",
+    "TimeOfArrival": "2022-10-18T09:46:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "GOL653",
+    "Wheels": 7,
+    "Brand": "Volvo",
+    "VehicleType": "Car",
+    "Model": "YI-53",
+    "TimeOfArrival": "2022-02-25T05:47:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "UES502",
+    "Wheels": 14,
+    "Brand": "Volkswagen",
+    "VehicleType": "Motorcycle",
+    "Model": "WY-72",
+    "TimeOfArrival": "2022-08-09T02:23:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "FUN388",
+    "Wheels": 4,
+    "Brand": "Volvo",
+    "VehicleType": "Car",
+    "Model": "WC-85",
+    "TimeOfArrival": "2022-05-05T08:19:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "RDC566",
+    "Wheels": 9,
+    "Brand": "Volkswagen",
+    "VehicleType": "Bus",
+    "Model": "NC-01",
+    "TimeOfArrival": "2022-03-29T11:55:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "YTE717",
+    "Wheels": 10,
+    "Brand": "Volvo",
+    "VehicleType": "Bus",
+    "Model": "PS-18",
+    "TimeOfArrival": "2022-05-17T10:40:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "CRX567",
+    "Wheels": 2,
+    "Brand": "Tesla",
+    "VehicleType": "Bicycle",
+    "Model": "VG-33",
+    "TimeOfArrival": "2022-11-24T02:34:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "YFU906",
+    "Wheels": 8,
+    "Brand": "BMW",
+    "VehicleType": "Motorcycle",
+    "Model": "IL-81",
+    "TimeOfArrival": "2022-12-10T04:51:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "GIW814",
+    "Wheels": 16,
+    "Brand": "Volvo",
+    "VehicleType": "Bicycle",
+    "Model": "QF-55",
+    "TimeOfArrival": "2021-12-23T10:10:00.000",
+    "BrandId": 10,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "UTY464",
+    "Wheels": 7,
+    "Brand": "Fiat",
+    "VehicleType": "Truck",
+    "Model": "GL-49",
+    "TimeOfArrival": "2022-11-25T11:43:00.000",
+    "BrandId": 10,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "JJM638",
+    "Wheels": 10,
+    "Brand": "Saab",
+    "VehicleType": "Motorcycle",
+    "Model": "VD-84",
+    "TimeOfArrival": "2022-11-06T04:47:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "RSF973",
+    "Wheels": 2,
+    "Brand": "BMW",
+    "VehicleType": "Bicycle",
+    "Model": "TA-66",
+    "TimeOfArrival": "2021-12-13T02:15:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "SGE501",
+    "Wheels": 11,
+    "Brand": "Saab",
+    "VehicleType": "Truck",
+    "Model": "IX-67",
+    "TimeOfArrival": "2022-05-27T07:05:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "FNF355",
+    "Wheels": 16,
+    "Brand": "Skoda",
+    "VehicleType": "Car",
+    "Model": "SQ-72",
+    "TimeOfArrival": "2022-06-07T06:23:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "JGM956",
+    "Wheels": 2,
+    "Brand": "Fiat",
+    "VehicleType": "Truck",
+    "Model": "CA-85",
+    "TimeOfArrival": "2022-04-14T05:27:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "TXH845",
+    "Wheels": 0,
+    "Brand": "Tesla",
+    "VehicleType": "Bicycle",
+    "Model": "XO-31",
+    "TimeOfArrival": "2022-06-05T02:27:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "XPC136",
+    "Wheels": 5,
+    "Brand": "Volkswagen",
+    "VehicleType": "Bus",
+    "Model": "YA-55",
+    "TimeOfArrival": "2022-01-22T03:09:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "HVE381",
+    "Wheels": 8,
+    "Brand": "Saab",
+    "VehicleType": "Bicycle",
+    "Model": "OF-15",
+    "TimeOfArrival": "2022-06-01T11:41:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "LUD917",
+    "Wheels": 7,
+    "Brand": "Toyota",
+    "VehicleType": "Truck",
+    "Model": "GF-24",
+    "TimeOfArrival": "2022-12-04T11:15:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "KWQ695",
+    "Wheels": 12,
+    "Brand": "Scania",
+    "VehicleType": "Truck",
+    "Model": "BL-01",
+    "TimeOfArrival": "2022-09-20T11:18:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "UHA136",
+    "Wheels": 3,
+    "Brand": "Toyota",
+    "VehicleType": "Motorcycle",
+    "Model": "FJ-06",
+    "TimeOfArrival": "2022-08-10T02:33:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "EGE185",
+    "Wheels": 7,
+    "Brand": "Skoda",
+    "VehicleType": "Motorcycle",
+    "Model": "TV-36",
+    "TimeOfArrival": "2022-03-10T01:37:00.000",
+    "BrandId": 8,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "POR233",
+    "Wheels": 9,
+    "Brand": "Volkswagen",
+    "VehicleType": "Truck",
+    "Model": "GT-26",
+    "TimeOfArrival": "2022-10-21T06:11:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "UXF610",
+    "Wheels": 4,
+    "Brand": "BMW",
+    "VehicleType": "Motorcycle",
+    "Model": "IL-54",
+    "TimeOfArrival": "2022-10-24T10:59:00.000",
+    "BrandId": 2,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "KGU412",
+    "Wheels": 9,
+    "Brand": "Volvo",
+    "VehicleType": "Bicycle",
+    "Model": "KH-41",
+    "TimeOfArrival": "2022-04-07T12:04:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "EQV412",
+    "Wheels": 14,
+    "Brand": "Saab",
+    "VehicleType": "Car",
+    "Model": "SH-47",
+    "TimeOfArrival": "2022-03-17T10:23:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "CRR145",
+    "Wheels": 7,
+    "Brand": "BMW",
+    "VehicleType": "Bicycle",
+    "Model": "JC-45",
+    "TimeOfArrival": "2022-01-08T08:55:00.000",
+    "BrandId": 10,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "IEM522",
+    "Wheels": 6,
+    "Brand": "Saab",
+    "VehicleType": "Bus",
+    "Model": "JF-64",
+    "TimeOfArrival": "2022-11-25T09:56:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "YEX559",
+    "Wheels": 6,
+    "Brand": "BMW",
+    "VehicleType": "Bicycle",
+    "Model": "IY-31",
+    "TimeOfArrival": "2022-01-12T09:12:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "PIZ256",
+    "Wheels": 13,
+    "Brand": "Tesla",
+    "VehicleType": "Motorcycle",
+    "Model": "DB-57",
+    "TimeOfArrival": "2022-01-27T08:58:00.000",
+    "BrandId": 2,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "XUW992",
+    "Wheels": 11,
+    "Brand": "Scania",
+    "VehicleType": "Bus",
+    "Model": "DT-62",
+    "TimeOfArrival": "2022-03-22T12:29:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "UYZ207",
+    "Wheels": 13,
+    "Brand": "Scania",
+    "VehicleType": "Motorcycle",
+    "Model": "XB-46",
+    "TimeOfArrival": "2022-04-04T02:25:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "CGP792",
+    "Wheels": 9,
+    "Brand": "Volkswagen",
+    "VehicleType": "Bicycle",
+    "Model": "FW-53",
+    "TimeOfArrival": "2022-05-30T02:31:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "OPG165",
+    "Wheels": 9,
+    "Brand": "Toyota",
+    "VehicleType": "Bus",
+    "Model": "IR-63",
+    "TimeOfArrival": "2022-09-08T12:57:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "MFS725",
+    "Wheels": 14,
+    "Brand": "Skoda",
+    "VehicleType": "Truck",
+    "Model": "IC-37",
+    "TimeOfArrival": "2022-10-31T03:44:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "DRX748",
+    "Wheels": 9,
+    "Brand": "BMW",
+    "VehicleType": "Car",
+    "Model": "QQ-57",
+    "TimeOfArrival": "2022-08-22T10:29:00.000",
+    "BrandId": 10,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "OYQ429",
+    "Wheels": 4,
+    "Brand": "Scania",
+    "VehicleType": "Car",
+    "Model": "CE-46",
+    "TimeOfArrival": "2022-08-28T05:31:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "XBJ073",
+    "Wheels": 4,
+    "Brand": "Fiat",
+    "VehicleType": "Car",
+    "Model": "HK-91",
+    "TimeOfArrival": "2022-05-30T06:42:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "JKH425",
+    "Wheels": 7,
+    "Brand": "Skoda",
+    "VehicleType": "Bicycle",
+    "Model": "EO-52",
+    "TimeOfArrival": "2022-06-09T01:51:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "DQI575",
+    "Wheels": 6,
+    "Brand": "Skoda",
+    "VehicleType": "Car",
+    "Model": "LI-05",
+    "TimeOfArrival": "2022-03-22T12:22:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "SGW606",
+    "Wheels": 15,
+    "Brand": "Volkswagen",
+    "VehicleType": "Truck",
+    "Model": "JZ-74",
+    "TimeOfArrival": "2022-02-16T10:39:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "XOI151",
+    "Wheels": 1,
+    "Brand": "Volvo",
+    "VehicleType": "Bicycle",
+    "Model": "NJ-61",
+    "TimeOfArrival": "2022-03-27T09:09:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "WQE656",
+    "Wheels": 2,
+    "Brand": "Fiat",
+    "VehicleType": "Truck",
+    "Model": "JH-01",
+    "TimeOfArrival": "2021-12-10T10:04:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "VYL785",
+    "Wheels": 3,
+    "Brand": "BMW",
+    "VehicleType": "Bus",
+    "Model": "VJ-46",
+    "TimeOfArrival": "2022-06-18T11:46:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "IAE223",
+    "Wheels": 9,
+    "Brand": "Scania",
+    "VehicleType": "Bicycle",
+    "Model": "CR-26",
+    "TimeOfArrival": "2022-06-07T01:45:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "TXL912",
+    "Wheels": 12,
+    "Brand": "Tesla",
+    "VehicleType": "Motorcycle",
+    "Model": "IP-47",
+    "TimeOfArrival": "2022-12-29T04:49:00.000",
+    "BrandId": 8,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "IAY843",
+    "Wheels": 16,
+    "Brand": "Fiat",
+    "VehicleType": "Car",
+    "Model": "BC-15",
+    "TimeOfArrival": "2021-12-16T03:46:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "ZOL131",
+    "Wheels": 1,
+    "Brand": "Volkswagen",
+    "VehicleType": "Bicycle",
+    "Model": "MP-38",
+    "TimeOfArrival": "2022-04-15T11:19:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "GNG217",
+    "Wheels": 7,
+    "Brand": "Saab",
+    "VehicleType": "Bus",
+    "Model": "IU-72",
+    "TimeOfArrival": "2022-05-03T11:09:00.000",
+    "BrandId": 8,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "IIJ541",
+    "Wheels": 11,
+    "Brand": "Volvo",
+    "VehicleType": "Motorcycle",
+    "Model": "RB-80",
+    "TimeOfArrival": "2022-05-05T03:30:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "NWG130",
+    "Wheels": 8,
+    "Brand": "BMW",
+    "VehicleType": "Bus",
+    "Model": "OJ-44",
+    "TimeOfArrival": "2022-03-24T07:10:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "TYR048",
+    "Wheels": 16,
+    "Brand": "Fiat",
+    "VehicleType": "Bicycle",
+    "Model": "FJ-63",
+    "TimeOfArrival": "2022-08-27T11:15:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "UZR644",
+    "Wheels": 15,
+    "Brand": "Skoda",
+    "VehicleType": "Truck",
+    "Model": "YM-96",
+    "TimeOfArrival": "2022-07-25T01:47:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "OBQ420",
+    "Wheels": 8,
+    "Brand": "Toyota",
+    "VehicleType": "Bus",
+    "Model": "UC-82",
+    "TimeOfArrival": "2022-12-30T06:26:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "PSO388",
+    "Wheels": 2,
+    "Brand": "Toyota",
+    "VehicleType": "Bus",
+    "Model": "QS-65",
+    "TimeOfArrival": "2022-01-13T08:02:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "RJE716",
+    "Wheels": 13,
+    "Brand": "Tesla",
+    "VehicleType": "Truck",
+    "Model": "AS-39",
+    "TimeOfArrival": "2022-08-01T07:52:00.000",
+    "BrandId": 8,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "PLH901",
+    "Wheels": 6,
+    "Brand": "Volvo",
+    "VehicleType": "Bicycle",
+    "Model": "VE-52",
+    "TimeOfArrival": "2022-03-03T04:30:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "HVZ758",
+    "Wheels": 2,
+    "Brand": "Scania",
+    "VehicleType": "Truck",
+    "Model": "NV-33",
+    "TimeOfArrival": "2022-08-07T09:19:00.000",
+    "BrandId": 2,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "FOX347",
+    "Wheels": 8,
+    "Brand": "Volkswagen",
+    "VehicleType": "Truck",
+    "Model": "WJ-96",
+    "TimeOfArrival": "2022-11-12T10:58:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "XBL338",
+    "Wheels": 4,
+    "Brand": "Skoda",
+    "VehicleType": "Motorcycle",
+    "Model": "FG-86",
+    "TimeOfArrival": "2022-08-23T09:16:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "ECK816",
+    "Wheels": 8,
+    "Brand": "Skoda",
+    "VehicleType": "Motorcycle",
+    "Model": "ZO-82",
+    "TimeOfArrival": "2022-03-18T10:58:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "UEF938",
+    "Wheels": 0,
+    "Brand": "Volkswagen",
+    "VehicleType": "Car",
+    "Model": "RW-78",
+    "TimeOfArrival": "2022-07-18T01:48:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "POQ543",
+    "Wheels": 11,
+    "Brand": "BMW",
+    "VehicleType": "Bus",
+    "Model": "EL-45",
+    "TimeOfArrival": "2022-01-22T06:26:00.000",
+    "BrandId": 0,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "TSN569",
+    "Wheels": 16,
+    "Brand": "Volkswagen",
+    "VehicleType": "Motorcycle",
+    "Model": "ID-04",
+    "TimeOfArrival": "2021-12-15T01:11:00.000",
+    "BrandId": 8,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "TXJ246",
+    "Wheels": 14,
+    "Brand": "BMW",
+    "VehicleType": "Truck",
+    "Model": "XL-77",
+    "TimeOfArrival": "2022-07-16T06:51:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "UIU262",
+    "Wheels": 7,
+    "Brand": "Saab",
+    "VehicleType": "Car",
+    "Model": "OK-62",
+    "TimeOfArrival": "2022-12-01T04:33:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "TRK510",
+    "Wheels": 13,
+    "Brand": "Saab",
+    "VehicleType": "Bus",
+    "Model": "KO-28",
+    "TimeOfArrival": "2022-06-23T05:48:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "VXE465",
+    "Wheels": 11,
+    "Brand": "Scania",
+    "VehicleType": "Car",
+    "Model": "FV-43",
+    "TimeOfArrival": "2022-11-02T03:00:00.000",
+    "BrandId": 5,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "GFA703",
+    "Wheels": 9,
+    "Brand": "Fiat",
+    "VehicleType": "Car",
+    "Model": "UL-46",
+    "TimeOfArrival": "2022-03-09T01:52:00.000",
+    "BrandId": 0,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "CWV665",
+    "Wheels": 12,
+    "Brand": "Volkswagen",
+    "VehicleType": "Car",
+    "Model": "XS-31",
+    "TimeOfArrival": "2022-04-28T04:00:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "SOV447",
+    "Wheels": 8,
+    "Brand": "Fiat",
+    "VehicleType": "Car",
+    "Model": "NV-77",
+    "TimeOfArrival": "2022-12-03T10:13:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "HVN816",
+    "Wheels": 5,
+    "Brand": "Scania",
+    "VehicleType": "Truck",
+    "Model": "IG-70",
+    "TimeOfArrival": "2022-03-02T10:41:00.000",
+    "BrandId": 2,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "VJH167",
+    "Wheels": 7,
+    "Brand": "Tesla",
+    "VehicleType": "Bus",
+    "Model": "BH-71",
+    "TimeOfArrival": "2022-03-07T08:01:00.000",
+    "BrandId": 2,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "DFS536",
+    "Wheels": 8,
+    "Brand": "Toyota",
+    "VehicleType": "Truck",
+    "Model": "TT-94",
+    "TimeOfArrival": "2022-05-27T03:29:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "IYL740",
+    "Wheels": 15,
+    "Brand": "Toyota",
+    "VehicleType": "Bicycle",
+    "Model": "NN-56",
+    "TimeOfArrival": "2022-05-14T10:29:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "GAV201",
+    "Wheels": 12,
+    "Brand": "Tesla",
+    "VehicleType": "Bicycle",
+    "Model": "ZX-82",
+    "TimeOfArrival": "2022-04-16T03:36:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "DBP233",
+    "Wheels": 4,
+    "Brand": "Toyota",
+    "VehicleType": "Motorcycle",
+    "Model": "MU-29",
+    "TimeOfArrival": "2022-07-18T11:44:00.000",
+    "BrandId": 10,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "PVI388",
+    "Wheels": 10,
+    "Brand": "Toyota",
+    "VehicleType": "Bicycle",
+    "Model": "GC-24",
+    "TimeOfArrival": "2022-11-20T08:00:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "TYV375",
+    "Wheels": 10,
+    "Brand": "Saab",
+    "VehicleType": "Motorcycle",
+    "Model": "QQ-81",
+    "TimeOfArrival": "2022-10-05T01:55:00.000",
+    "BrandId": 2,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "CBO436",
+    "Wheels": 13,
+    "Brand": "Fiat",
+    "VehicleType": "Bus",
+    "Model": "QA-53",
+    "TimeOfArrival": "2022-06-27T04:39:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Yellow",
+    "RegistrationNr": "WBT663",
+    "Wheels": 5,
+    "Brand": "Volkswagen",
+    "VehicleType": "Bicycle",
+    "Model": "QR-98",
+    "TimeOfArrival": "2022-02-13T07:13:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "PTB433",
+    "Wheels": 1,
+    "Brand": "Saab",
+    "VehicleType": "Truck",
+    "Model": "TT-57",
+    "TimeOfArrival": "2022-07-31T01:19:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "Saab"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "CVO878",
+    "Wheels": 6,
+    "Brand": "Fiat",
+    "VehicleType": "Bicycle",
+    "Model": "ZE-58",
+    "TimeOfArrival": "2022-11-29T07:26:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "NNU185",
+    "Wheels": 14,
+    "Brand": "Volvo",
+    "VehicleType": "Car",
+    "Model": "FN-75",
+    "TimeOfArrival": "2021-12-10T07:08:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "KBK316",
+    "Wheels": 3,
+    "Brand": "Scania",
+    "VehicleType": "Bicycle",
+    "Model": "IG-05",
+    "TimeOfArrival": "2022-03-06T09:35:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Scania"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "FFM178",
+    "Wheels": 8,
+    "Brand": "Tesla",
+    "VehicleType": "Car",
+    "Model": "VS-50",
+    "TimeOfArrival": "2022-12-10T08:59:00.000",
+    "BrandId": 6,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "CFX444",
+    "Wheels": 16,
+    "Brand": "Skoda",
+    "VehicleType": "Bus",
+    "Model": "OW-45",
+    "TimeOfArrival": "2022-05-07T01:40:00.000",
+    "BrandId": 8,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Silver",
+    "RegistrationNr": "FAO415",
+    "Wheels": 7,
+    "Brand": "Tesla",
+    "VehicleType": "Bicycle",
+    "Model": "PD-49",
+    "TimeOfArrival": "2022-12-01T04:08:00.000",
+    "BrandId": 10,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "EXW638",
+    "Wheels": 14,
+    "Brand": "Tesla",
+    "VehicleType": "Motorcycle",
+    "Model": "QK-86",
+    "TimeOfArrival": "2022-09-30T06:16:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "EMG132",
+    "Wheels": 13,
+    "Brand": "Volkswagen",
+    "VehicleType": "Bus",
+    "Model": "DM-47",
+    "TimeOfArrival": "2022-06-29T07:04:00.000",
+    "BrandId": 7,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "DAF828",
+    "Wheels": 10,
+    "Brand": "Tesla",
+    "VehicleType": "Bus",
+    "Model": "ZD-48",
+    "TimeOfArrival": "2022-03-20T08:53:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "White",
+    "RegistrationNr": "YXM574",
+    "Wheels": 3,
+    "Brand": "Fiat",
+    "VehicleType": "Truck",
+    "Model": "YL-67",
+    "TimeOfArrival": "2022-11-12T07:59:00.000",
+    "BrandId": 4,
+    "BrandDb": {
+      "name": "Fiat"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Black",
+    "RegistrationNr": "RQD019",
+    "Wheels": 8,
+    "Brand": "Toyota",
+    "VehicleType": "Bicycle",
+    "Model": "PM-06",
+    "TimeOfArrival": "2022-12-16T08:25:00.000",
+    "BrandId": 0,
+    "BrandDb": {
+      "name": "Toyota"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "EOA785",
+    "Wheels": 11,
+    "Brand": "Tesla",
+    "VehicleType": "Motorcycle",
+    "Model": "AD-48",
+    "TimeOfArrival": "2022-05-15T07:26:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Tesla"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "QHN643",
+    "Wheels": 1,
+    "Brand": "Skoda",
+    "VehicleType": "Bus",
+    "Model": "QP-11",
+    "TimeOfArrival": "2022-12-04T09:22:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Bus"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "FFH306",
+    "Wheels": 9,
+    "Brand": "Skoda",
+    "VehicleType": "Bicycle",
+    "Model": "YO-15",
+    "TimeOfArrival": "2022-01-19T10:59:00.000",
+    "BrandId": 3,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Bicycle"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "UUR264",
+    "Wheels": 7,
+    "Brand": "Volkswagen",
+    "VehicleType": "Car",
+    "Model": "HK-27",
+    "TimeOfArrival": "2022-04-26T02:18:00.000",
+    "BrandId": 2,
+    "BrandDb": {
+      "name": "Volkswagen"
+    },
+    "TypeDb": {
+      "name": "Car"
+    }
+  },
+  {
+    "Color": "Blue",
+    "RegistrationNr": "ZPT082",
+    "Wheels": 4,
+    "Brand": "Volvo",
+    "VehicleType": "Motorcycle",
+    "Model": "FI-74",
+    "TimeOfArrival": "2022-04-27T08:20:00.000",
+    "BrandId": 9,
+    "BrandDb": {
+      "name": "Volvo"
+    },
+    "TypeDb": {
+      "name": "Motorcycle"
+    }
+  },
+  {
+    "Color": "Green",
+    "RegistrationNr": "GFP182",
+    "Wheels": 5,
+    "Brand": "Skoda",
+    "VehicleType": "Truck",
+    "Model": "LL-71",
+    "TimeOfArrival": "2022-12-31T05:39:00.000",
+    "BrandId": 1,
+    "BrandDb": {
+      "name": "Skoda"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  },
+  {
+    "Color": "Red",
+    "RegistrationNr": "RSN534",
+    "Wheels": 5,
+    "Brand": "BMW",
+    "VehicleType": "Truck",
+    "Model": "LI-83",
+    "TimeOfArrival": "2022-06-06T09:11:00.000",
+    "BrandId": 0,
+    "BrandDb": {
+      "name": "BMW"
+    },
+    "TypeDb": {
+      "name": "Truck"
+    }
+  }
 ]

@@ -1,7 +1,6 @@
 ﻿using Garage2_0.Data;
 using Garage2_0.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -23,12 +22,12 @@ namespace Garage2_0.Controllers
         public async Task<IActionResult> Index(int? pageNumber, string sortOrder)
         {
             ViewData["CurrentSort"] = sortOrder;
-            ViewData["RegSortParm"] = String.IsNullOrEmpty(sortOrder) ? "regnr_desc" : "";
+            ViewData["RegSortParm"] = string.IsNullOrEmpty(sortOrder) ? "regnr_desc" : "";
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
 
             int pageSize = settings.Value.IntSetting;
 
-            var model = _context.Vehicle.OrderBy(s => s.RegistrationNr);
+            var model = _context.Vehicle.Include(v => v.BrandDb).Include(v=>v.TypeDb).OrderBy(s => s.RegistrationNr);
 
             switch (sortOrder)
             {
@@ -41,9 +40,9 @@ namespace Garage2_0.Controllers
                 case "date_desc":
                     model = model.OrderByDescending(s => s.TimeOfArrival);
                     break;
-                //default:
-                //    model = model.OrderBy(s => s.RegistrationNr);
-                //    break;
+                    //default:
+                    //    model = model.OrderBy(s => s.RegistrationNr);
+                    //    break;
             }
 
             return View(await PaginatedList<Vehicle>.CreateAsync(model, pageNumber ?? 1, pageSize));
@@ -68,7 +67,7 @@ namespace Garage2_0.Controllers
                 return NotFound();
             }
 
-            var vehicle = await _context.Vehicle
+            var vehicle = await _context.Vehicle.Include(v => v.BrandDb)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (vehicle == null)
             {
@@ -89,7 +88,7 @@ namespace Garage2_0.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Color,Brand,VehicleType,Wheels,RegistrationNr,Model")] Vehicle vehicle)
+        public async Task<IActionResult> Create([Bind("Id,Color,Brand,VehicleType,Wheels,RegistrationNr,Model,BrandDbId,TypeDbId")] Vehicle vehicle)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +109,7 @@ namespace Garage2_0.Controllers
                 return NotFound();
             }
 
-            var vehicle = await _context.Vehicle.FindAsync(id);
+            var vehicle = await _context.Vehicle.Include(v => v.BrandDb).Include(v => v.TypeDb).FirstOrDefaultAsync(v=>v.Id==id);
             if (vehicle == null)
             {
                 return NotFound();
@@ -123,7 +122,7 @@ namespace Garage2_0.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Color,Brand,VehicleType,Wheels,RegistrationNr,Model,TimeOfArrival")] Vehicle vehicle)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Color,Brand,VehicleType,Wheels,RegistrationNr,Model,TimeOfArrival,BrandDbId,TypeDbId")] Vehicle vehicle)
         {
             if (id != vehicle.Id)
             {
@@ -184,10 +183,6 @@ namespace Garage2_0.Controllers
             var vehicle = await _context.Vehicle.FindAsync(id);
 
             var receipt = new ReceiptViewModel();
-            //{
-            //    RegNr = vehicle.RegistrationNr,
-            //    TimeOfArrival = vehicle.TimeOfArrival,
-            //};
             receipt.RegNr = vehicle.RegistrationNr;
             receipt.TimeOfArrival = vehicle.TimeOfArrival;
             var totalTime = DateTime.Now.Subtract(vehicle.TimeOfArrival).TotalHours;
