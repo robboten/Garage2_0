@@ -43,7 +43,10 @@ namespace Garage2_0.Models
         public TypeDb? TypeDb { get; set; } 
 
 
-        [StringLength(10, MinimumLength = 0, ErrorMessage = "{0} length must be between {2} and {1} characters.")]
+        //[StringLength(10, MinimumLength = 0, ErrorMessage = "{0} length must be between {2} and {1} characters.")]
         public string? Model { get; set; }
+
+       // public int OwnerId { get; set; }
+        public ICollection<Owner>? Owner { get; set; }
     }
 }

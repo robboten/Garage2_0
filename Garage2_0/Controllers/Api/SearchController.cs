@@ -1,4 +1,6 @@
-﻿using Garage2_0.Models;
+﻿using AutoMapper;
+using Garage2_0.Dtos;
+using Garage2_0.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.Drawing.Text;
@@ -11,17 +13,20 @@ namespace Garage2_0.Controllers.Api
     {
         private readonly IVehicleRepository vehicleRepository;
         private readonly IOptions<MySettings> settings;
+        private readonly IMapper mapper;
 
-        public SearchController(IVehicleRepository vehicleRepository, IOptions<MySettings> settings)
+        public SearchController(IVehicleRepository vehicleRepository, IOptions<MySettings> settings, IMapper mapper)
         {
             this.vehicleRepository = vehicleRepository;
             this.settings = settings;
+            this.mapper = mapper;
         }
 
         [HttpGet]
         public IActionResult GetVehicles() {
             var allVehicles = vehicleRepository.AllVehicles;
-            return Ok(allVehicles);
+            var vehicleDtos = mapper.Map<List<VehicleDto>>(allVehicles);
+            return Ok(vehicleDtos);
         }
 
         [HttpGet("{regNr}")]

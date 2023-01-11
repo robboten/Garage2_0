@@ -36,7 +36,28 @@ namespace Garage20.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BrandDb");
+                    b.ToTable("BrandDb", (string)null);
+                });
+
+            modelBuilder.Entity("Garage2_0.Models.Owner", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Owner", (string)null);
                 });
 
             modelBuilder.Entity("Garage2_0.Models.TypeDb", b =>
@@ -53,7 +74,7 @@ namespace Garage20.Migrations
 
                     b.HasKey("TypeDbId");
 
-                    b.ToTable("TypeDb");
+                    b.ToTable("TypeDb", (string)null);
                 });
 
             modelBuilder.Entity("Garage2_0.Models.Vehicle", b =>
@@ -67,15 +88,14 @@ namespace Garage20.Migrations
                     b.Property<int>("Brand")
                         .HasColumnType("int");
 
-                    b.Property<int>("BrandDbId")
+                    b.Property<int?>("BrandDbId")
                         .HasColumnType("int");
 
                     b.Property<int>("Color")
                         .HasColumnType("int");
 
                     b.Property<string>("Model")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RegistrationNr")
                         .IsRequired()
@@ -85,7 +105,7 @@ namespace Garage20.Migrations
                     b.Property<DateTime>("TimeOfArrival")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("TypeDbId")
+                    b.Property<int?>("TypeDbId")
                         .HasColumnType("int");
 
                     b.Property<int>("VehicleType")
@@ -100,26 +120,52 @@ namespace Garage20.Migrations
 
                     b.HasIndex("TypeDbId");
 
-                    b.ToTable("Vehicle");
+                    b.ToTable("Vehicle", (string)null);
+                });
+
+            modelBuilder.Entity("OwnerVehicle", b =>
+                {
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VehicleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("OwnerId", "VehicleId");
+
+                    b.HasIndex("VehicleId");
+
+                    b.ToTable("OwnerVehicle", (string)null);
                 });
 
             modelBuilder.Entity("Garage2_0.Models.Vehicle", b =>
                 {
                     b.HasOne("Garage2_0.Models.BrandDb", "BrandDb")
                         .WithMany("Vehicles")
-                        .HasForeignKey("BrandDbId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BrandDbId");
 
                     b.HasOne("Garage2_0.Models.TypeDb", "TypeDb")
                         .WithMany("Vehicles")
-                        .HasForeignKey("TypeDbId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TypeDbId");
 
                     b.Navigation("BrandDb");
 
                     b.Navigation("TypeDb");
+                });
+
+            modelBuilder.Entity("OwnerVehicle", b =>
+                {
+                    b.HasOne("Garage2_0.Models.Owner", null)
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Garage2_0.Models.Vehicle", null)
+                        .WithMany()
+                        .HasForeignKey("VehicleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Garage2_0.Models.BrandDb", b =>

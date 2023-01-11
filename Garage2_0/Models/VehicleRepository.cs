@@ -9,15 +9,34 @@ namespace Garage2_0.Models
 
         public VehicleRepository(GarageContext garageContext)
         {
-            this.garageContext = garageContext; 
+            this.garageContext = garageContext;
         }
-        public IEnumerable<Vehicle> AllVehicles { get { return garageContext.Vehicle.Include(v=>v.BrandDb).Include(v=>v.TypeDb).ToList(); } }
+        public IEnumerable<Vehicle> AllVehicles
+        {
+            get
+            {
+                return garageContext.Vehicle
+                    .Include(v => v.Owner)
+                    .Include(v => v.BrandDb)
+                    .Include(v => v.TypeDb)
+                    .Include(v => v.Owner)
+                    .ToList();
+            }
+        }
 
-        public Vehicle? GetVehicleByRegNr(string regNr) => garageContext.Vehicle.Include(v => v.BrandDb).Include(v => v.TypeDb).FirstOrDefault(p => p.RegistrationNr == regNr);
-
-        public DateTime GetCheckoutPrice(string regNr) => garageContext.Vehicle.Include(v => v.BrandDb)
+        public Vehicle? GetVehicleByRegNr(string regNr) => garageContext.Vehicle
+            .Include(v => v.Owner)
+            .Include(v => v.BrandDb)
             .Include(v => v.TypeDb)
+            .Include(v => v.Owner)
+            .FirstOrDefault(p => p.RegistrationNr == regNr);
+
+        public DateTime GetCheckoutPrice(string regNr) => garageContext.Vehicle
+            .Include(v => v.Owner)
+            .Include(v => v.BrandDb)
+            .Include(v => v.TypeDb)
+            .Include(v => v.Owner)
             .FirstOrDefault(p => p.RegistrationNr == regNr).TimeOfArrival;
     }
- 
+
 }

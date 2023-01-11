@@ -25,6 +25,20 @@ namespace Garage20.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Owner",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Owner", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "TypeDb",
                 columns: table => new
                 {
@@ -48,10 +62,10 @@ namespace Garage20.Migrations
                     VehicleType = table.Column<int>(type: "int", nullable: false),
                     Color = table.Column<int>(type: "int", nullable: false),
                     Brand = table.Column<int>(type: "int", nullable: false),
-                    BrandDbId = table.Column<int>(type: "int", nullable: false),
+                    BrandDbId = table.Column<int>(type: "int", nullable: true),
                     Wheels = table.Column<int>(type: "int", nullable: false),
-                    TypeDbId = table.Column<int>(type: "int", nullable: false, defaultValue:3),
-                    Model = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true)
+                    TypeDbId = table.Column<int>(type: "int", nullable: true),
+                    Model = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -60,15 +74,42 @@ namespace Garage20.Migrations
                         name: "FK_Vehicle_BrandDb_BrandDbId",
                         column: x => x.BrandDbId,
                         principalTable: "BrandDb",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Vehicle_TypeDb_TypeDbId",
                         column: x => x.TypeDbId,
                         principalTable: "TypeDb",
-                        principalColumn: "TypeDbId",
+                        principalColumn: "TypeDbId");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OwnerVehicle",
+                columns: table => new
+                {
+                    OwnerId = table.Column<int>(type: "int", nullable: false),
+                    VehicleId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OwnerVehicle", x => new { x.OwnerId, x.VehicleId });
+                    table.ForeignKey(
+                        name: "FK_OwnerVehicle_Owner_OwnerId",
+                        column: x => x.OwnerId,
+                        principalTable: "Owner",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OwnerVehicle_Vehicle_VehicleId",
+                        column: x => x.VehicleId,
+                        principalTable: "Vehicle",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OwnerVehicle_VehicleId",
+                table: "OwnerVehicle",
+                column: "VehicleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Vehicle_BrandDbId",
@@ -84,6 +125,12 @@ namespace Garage20.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "OwnerVehicle");
+
+            migrationBuilder.DropTable(
+                name: "Owner");
+
             migrationBuilder.DropTable(
                 name: "Vehicle");
 
