@@ -12,6 +12,7 @@ namespace Garage2_0.Data
         public GarageContext (DbContextOptions<GarageContext> options)
             : base(options)
         {
+            ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public DbSet<Vehicle> Vehicle { get; set; } = default!;
