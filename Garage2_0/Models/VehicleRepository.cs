@@ -1,5 +1,6 @@
 ﻿using Garage2_0.Data;
 using Microsoft.EntityFrameworkCore;
+using System.IO.Pipelines;
 
 namespace Garage2_0.Models
 {
@@ -19,7 +20,6 @@ namespace Garage2_0.Models
                     .Include(v => v.Owner)
                     .Include(v => v.BrandDb)
                     .Include(v => v.TypeDb)
-                    .Include(v => v.Owner)
                     .ToList();
             }
         }
@@ -28,15 +28,23 @@ namespace Garage2_0.Models
             .Include(v => v.Owner)
             .Include(v => v.BrandDb)
             .Include(v => v.TypeDb)
-            .Include(v => v.Owner)
             .FirstOrDefault(p => p.RegistrationNr == regNr);
 
         public DateTime GetCheckoutPrice(string regNr) => garageContext.Vehicle
             .Include(v => v.Owner)
             .Include(v => v.BrandDb)
             .Include(v => v.TypeDb)
-            .Include(v => v.Owner)
             .FirstOrDefault(p => p.RegistrationNr == regNr).TimeOfArrival;
+
+        public IEnumerable<Vehicle> SearchVehicles(string searchQuery)
+        {
+            return garageContext.Vehicle
+                .Include(v => v.Owner)
+                .Include(v => v.BrandDb)
+                .Include(v => v.TypeDb)
+                .Where(v => v.RegistrationNr.Contains(searchQuery))
+                ;
+        }
     }
 
 }

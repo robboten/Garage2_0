@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Vehicle>
+
+@foreach (var item in Model)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().RegistrationNr)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().VehicleType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().TimeOfArrival)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().HoursParked)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().BrandDb.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().TypeDb.Name)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-uppercase">
+                    @Html.DisplayFor(modelItem => item.RegistrationNr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VehicleType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeOfArrival)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoursParked)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BrandDb.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeDb.Name)
+                </td>
+                <td>
+                    <a asp-controller="Vehicles" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-controller="Vehicles" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-controller="Vehicles" asp-action="Delete" asp-route-id="@item.Id">Check out</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}

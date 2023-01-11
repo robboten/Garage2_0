@@ -6,5 +6,7 @@
 
         Vehicle? GetVehicleByRegNr(string regNr);
         DateTime GetCheckoutPrice(string regNr);
+
+        IEnumerable<Vehicle> SearchVehicles(string searchQuery);
     }
 }

@@ -1,8 +1,7 @@
 ﻿@{
-    ViewData["Title"] = "Garage Page";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Garage Search";
 }
-
+@Html.AntiForgeryToken()
 <div class="ui-widget">
     <input id="autocomplete-1" placeholder="Registration Number" />
 </div>
@@ -15,26 +14,25 @@
         $(document).ready(function () {
             var root = "https://" + document.location.hostname + ":7087";
             $("#autocomplete-1").autocomplete({
-                source: root + '/api/Search/RegSearch/',
+                source: '@Url.Action("RegSearch","Search")',
                 select: function (event, ui) {
-                    console.log(ui.item.value);
-                    console.log('@Url.Action("RegSearch","Search",new { httproute = "Api" })');
-                    //fill selected customer details on form
                     $.ajax({
                         cache: false,
                         async: false,
                         type: "POST",
-                        contentType: "application/json",
-                        url: "api/Search/",
+                        headers: { "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val() },
+                        contentType: "application/json; charset=utf-8",
+                        url: '@Url.Action("SearchVehicles","Search")',
                         data: JSON.stringify(ui.item.value),
                         success: function (data) {
-                            console.log(data);
                             $("#searchhits").html(data);
-                            $('#VisitorDetail').show();
                             action = data.Action;
                         },
-                        error: function (xhr, ajaxOptions, thrownError) {
-                            alert('Failed to retrieve states.');
+                        error: function (ex) {
+                            var r = jQuery.parseJSON(response.responseText);  
+                            alert("Message: " + r.Message);  
+                            alert("StackTrace: " + r.StackTrace);  
+                            alert("ExceptionType: " + r.ExceptionType);  
                         }
                     });
                 }

@@ -21,6 +21,26 @@ namespace Garage2_0.Controllers
             _context = context;
         }
 
+
+        //[HttpGet("search")]
+        //[Route("api")]
+        //[Produces("application/json")]
+        //public async Task<IActionResult> Search()
+        //{
+        //    try
+        //    {
+        //        string term = HttpContext.Request.Query["term"].ToString();
+
+        //        //        if (!string.IsNullOrEmpty(term))
+        //        //      {
+        //        var vehicles = _context.Vehicle.Where(v => v.RegistrationNr.Contains(term)).Select(v => v.RegistrationNr.ToList());
+        //        return new JsonResult(vehicles);
+        //        //          }
+
+        //    }
+        //    catch { return BadRequest(); }
+        //}
+
         public IActionResult Index()
         {
             return View();

@@ -18,6 +18,11 @@ namespace Garage2_0.Controllers
 
         }
 
+        public IActionResult SearchTest()
+        {
+            return View();
+        }
+
         // GET: PaginatedList<Vehicle>
         public async Task<IActionResult> Index(int? pageNumber, string sortOrder)
         {
